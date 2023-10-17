@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Tutorial</title>
+    <link rel="stylesheet" href="css-tutorial.css">
+</head>
+
+<body>
+    <!-- <h1>Day-1</h1> -->
+    <div>
+        <div>
+            <h3>What is CSS??</h3>
+            <h3>Why Use CSS??</h3>
+            <h3>How to define CSS??</h3>
+            <h3>How many type of a selector??</h3>
+            <ul>
+                <li> CSS stands for Cascading Style Sheets </li>
+                <li> Css is a stylesheet language. </li>
+                <li> It is used to define look and fill of html element or webulage. </li>
+                <li> It's save lot of time and easy to design layout of webpage. </li>
+                <li> Extension of css file :- .css </li>
+            </ul>
+            <p>
+                <b> CSS used :- </b><br>
+                It is used to define styles for web pages with the <b>design</b> ,<b>layout</b>. <br>
+                different devices and screen sizes.
+            </p>
+            <img src="cssImage/img_selector.gif" alt="img" />
+            <ul>
+                <b>SELECTOR :-</b> <br>
+                <li> Universel selector :- <b> * {...} </b> </li>
+                <li> Id selector :- <b> #IdName {...} </b> </li>
+                <li> Class selector :- <b>.className {...} </b> </li>
+                <li> Element selector :- <b> p {...} </b> </li>
+                <li> Groupping selector :- <b>p, h1, h2 {...} </b> </li>
+                <li> Spacified element selector :-<b> p.className {...} </b> </li>
+            </ul>
+            <ul>
+                <b>CSS Apply with three way :-</b>
+                <li> Inline CSS </li>
+                <li> Internal CSS </li>
+                <li> External CSS </li>
+            </ul>
+            <p>
+                <b>Highest priority :-</b> <br>
+                Inline style has the highest priority. <br>
+                Override external and internal styles.
+            </p>
+            <h3>CSS Comments</h3>
+            <p><b>Single line comment :-</b>/*....................*/</p>
+            <p><b>Multi line comment :-</b><br>
+                /*............ <br>
+                ............. <br>
+                .............*/
+            </p>
+            <h3>CSS COLOR??</h3>
+            <ul>
+                <li> RGB/RGBA :- RED GREEN BLUE ALFACHANNEL (OPACITY) :- (0-255) </li>
+                <li> HEX :- HEXADECIMAL COLOR :- (00-ff) </li>
+                <li> HSL/HSLA:- HUE SATURATION LIGHTNESS ALFA(OPACITY) :- (&deg; , % , % ,0.0-1) </li>
+            </ul>
+        </div>
+        <div>
+            <h3>Css background properties</h3>
+            <dl>
+                <dt>&bull; background-color : red;</dt>
+                <dd> - blue , red, rgb(0,241,200), hsl(240,40%,50%)</dd>
+            </dl>
+            <dl>
+                <dt>&bull; background-image : url("image.png")</dt>
+                <dd> - url("name.jpg");</dd>
+            </dl>
+            <dl>
+                <dt>&bull; background-repeat : no-repeat;</dt>
+                <dd> - repeat-x; repeat-y; no-repeat;</dd>
+            </dl>
+            <dl>
+                <dt>&bull; background-possition : right bottom</dt>
+                <dd> - right top;</dd>
+            </dl>
+            <dl>
+                <dt>&bull; background-attachment: fixed; </dt>
+                <dd> - fixed; scroll;</dd>
+            </dl>
+            <dl>
+                <dt>&bull; Shorthand property</dt>
+                <dd>- background: #ffffff url("img_tree.png") no-repeat right top;</dd>
+            </dl>
+
+            <h3>Css border properties</h3>
+            <dl>
+                <dt>&bull; border-width: 5px;</dt>
+                <dd> - 1px, 2px........</dd>
+            </dl>
+            <dl>
+                <dt>&bull; border-style: solid;</dt>
+                <dd> - solid, dotted, dashed, double, groove, ridge, inset, outset, none, hidden.</dd>
+            </dl>
+            <dl>
+                <dt>&bull; border-color: red;</dt>
+                <dd> - ...............................</dd>
+            </dl>
+            <dl>
+                <dt>&bull; Border individual sides :</dt>
+                <dd> border-top-style: dotted; </dd>
+                <dd> border-right-style: solid; </dd>
+                <dd> border-bottom-style: dotted; </dd>
+                <dd> border-left-style: solid; </dd>
+                <blockquote>
+                    <dt>&bull; Sides shorthands :-</dt>
+                    <dd>border-style :tob/bottom right/left;</dd>
+                    <dd>border-style :tob right bottom left;</dd>
+                </blockquote>
+            </dl>
+            <dl>
+                <dt>&bull; Border Shorthand property</dt>
+                <dd> border-bottom: 6px solid red; </dd>
+                <dd> ------------- width, style, color--------------</dd>
+            </dl>
+            <dl>
+                <dt>&bull; Border radius</dt>
+                <dd> border-radius: 5px;</dd>
+                <dd> border-radius: 10%;</dd>
+            </dl>
+            <h3>Css margin and padding properties</h3>
+            <p>
+                <img src="cssImage/marginPadding3.png" width="300px" alt="hhh"> <br><br>
+                <img src="cssImage/marginpadding.gif" width="400px" alt="hhh"> &nbsp;&nbsp;&nbsp;&nbsp;
+                <img src="cssImage/marginPadding2.png" width="300px" alt="ggg">
+            </p>
+            <div style="min-height: 200px; border: none;">
+                <dl style="float: left;">
+                    <dt> &bull; Margin</dt>
+                    <dd>- margin-top : 5px;</dd>
+                    <dd>- margin-right : 5px;</dd>
+                    <dd>- margin-bottom : 5px;</dd>
+                    <dd>- margin-left : 5px;</dd>
+                    <dd>- margin-left : auto;</dd>
+                    <blockquote>
+                        <dt>&bull; Margin shorthands</dt>
+                        <dd>margin : 20px; </dd>
+                        <dd>margin : 20px 40px;</dd>
+                        <dd>margin : 20px 40px 60px 80px;</dd>
+                    </blockquote>
+                </dl>
+                <dl style="float: right;">
+                    <dt> &bull; Padding</dt>
+                    <dd>- padding-top : 5px;</dd>
+                    <dd>- padding-right : 5px;</dd>
+                    <dd>- padding-bottom : 5px;</dd>
+                    <dd>- padding-left : 5px;</dd>
+                    <dd>- padding-left : auto;</dd>
+                    <blockquote>
+                        <dt>&bull; Padding shorthands</dt>
+                        <dd>padding : 20px; </dd>
+                        <dd>padding : 20px 40px;</dd>
+                        <dd>padding : 20px 40px 60px 80px;</dd>
+                    </blockquote>
+                </dl>
+            </div>
+            <h3>CSS Height, Width and Max-width Min-width </h3>
+            <dl>
+                <dt>&bull; height :50px;</dt>
+                <dd>- height of an element </dd> <br>
+                <dt>&bull; max-height :50px;</dt>
+                <dd>- maximum height of an element </dd> <br>
+                <dt>&bull; max-width :50px;</dt>
+                <dd>- maximum width of an element </dd> <br>
+                <dt>&bull; min-height :50px;</dt>
+                <dd>- minimum height of an element </dd> <br>
+                <dt>&bull; min-width :50px;</dt>
+                <dd>- minimum width of an element </dd> <br>
+                <dt>&bull; width :50px;</dt>
+                <dd>- width of an element </dd> <br>
+            </dl>
+            <h3>Css outline</h3>
+            <dt> outline-style : solid;</dt>
+            <dd>...</dd>
+            <dt> outline-color : red;</dt>
+            <dd>...</dd>
+            <dt> outline-width : 10px; </dt>
+            <dd>...</dd>
+            <dt> outline-offset : 15px; </dt>
+            <dd>...</dd>
+            <dt> outline shorthand </dt>
+            <dd>- outline :10px dotted red;</dd>
+        </div>
+        <div>
+            <h3>Css Text</h3>
+            <dl>
+                <dt>&bull; color: #f00;</dt>
+                <dd>...</dd><br>
+                <dt>&bull; text-align : justify;</dt>
+                <dd>- center, left, right, justify</dd><br>
+                <dt>&bull; text-align-last : center;</dt>
+                <dd>- center, left, right, justify</dd><br>
+                <dt>&bull; direction and unicode-bidi</dt>
+                <dd> p {
+                    direction : rtl;
+                    unicode-bidi : bidi-override;
+                    }</dd>
+                <dd>- right to left align and opposite</dd><br>
+                <dt>&bull; vertical-align: baseline;</dt>
+                <dd>- baseline, text-top, text-bottom, sub, super</dd>
+            </dl>
+            <dl>
+                <dt>Text decoration</dt>
+                <dd>&bull; text-decoration: overline;</dd>
+                <dd>&bull; text-decoration: line-through;</dd>
+                <dd>&bull; text-decoration: underline;</dd>
+                <dd>&bull; text-decoration: overline underline;</dd><br>
+                <dd>h1 {<br>
+                    text-decoration-line: overline;<br>
+                    text-decoration-color: red;<br>
+                    text-decoration-style: wavy;<br>
+                    text-decoration-thickness: 5px; <br>
+                    } &nbsp; (solid default, dashed)<br>
+                </dd>
+                <dd>
+                    h1 {<br>
+                    text-decoration-line: line-through;<br>
+                    text-decoration-color: blue;<br>
+                    text-decoration-style: double;<br>
+                    text-decoration-thickness: 25%;<br>
+                    }
+                </dd><br><br>
+                <dt>&bull; Short hand property of text-decoration</dt>
+                <dd>p{text-decoration: underline red double 5px;}</dd>
+                <dd>p{text-decoration : 5px dashes red wavy}</dd>
+                <br><br>
+                <dt>&bull; Text Transformation</dt>
+                <dd>p{ text-transform: uppercase; } --- THE TRANSFORMED</dd>
+                <dd>p{ text-transform: lowercase; } --- the transformed</dd>
+                <dd>p{ text-transform: capitalize; } --- The Capitalized</dd>
+                <br><br>
+                <dt>&bull; Text spacing</dt>
+                <dd>p {text-indent: 60px;} -- Indentation of the first line</dd> <br>
+                <dd>h1 {letter-spacing: 5px;} -- T h i s &nbsp;  i s &nbsp;  h e a d i n g &nbsp;  1</dd>
+                <dd>h2 {letter-spacing: -1px;} -- This is heading 2</dd>
+                <br><br>
+                <dd>p { line-height: 0.75;} -- space arroun two line small</dd>
+                <dd>p { line-height: 2.0;} -- space arroun two line big</dd>
+                <br><br>
+                <dd>h1 {  word-spacing: 10px;} -- This &nbsp;&nbsp; is &nbsp;&nbsp;heading&nbsp;&nbsp; 1</dd>
+                <dd>h2 {  word-spacing: -2px;} -- This is heading 2</dd>
+                <br><br>
+                <dd>p{ white-space: nowrap;} -- Waste space neglet</dd>
+                <br>
+                <dt>Text shadow</dt>
+                <dd>h1 {text-shadow: 2px 2px;} -- <h1 style="text-shadow: 2px 2px;">horizontal (2px)and vertical(2px)</h1></dd>
+                <dd>h1 {text-shadow: 2px 2px red;}--<h1 style="text-shadow: 2px 2px red;">horizontal (2px) vertical(2px) with color</h1></dd>
+
+                <dd>h1 {text-shadow: 2px 2px 5px green;}--<h1 style="text-shadow: 2px 2px green;">horizontal (2px) vertical(2px) blur(5px) color</h1></dd>
+
+                <dd>h1 {color: white; text-shadow: 2px 2px 4px #000000;}--<h1 style="color: white; text-shadow: 2px 2px 4px #000000;">horizontal (2px) vertical(2px) h1 {text-shadow: 2px 2px 5px red;} color</h1></dd>
+
+                <dd>h1 {text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;}--<h1 style="text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;">horizontal (2px) vertical(2px) h1 {text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;} color</h1></dd>
+
+                <dd>h1 {color: white;text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;}--<h1 style="color: white;text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;">color: white;text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;</h1></dd>
+            </dl>
+        </div>
+
+        <div>
+            <h3>CSS Fonts</h3>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
