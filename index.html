@@ -4,22 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="cssImage/favicon.ico" type="image/x-icon">
+
     <title>Css Tutorial</title>
+
     <link rel="stylesheet" href="css-tutorial.css">
+
+    <!-- u -->
 </head>
 
 <body>
     <!-- <h1>Day-1</h1> -->
-    <div>
-        <div>
-            <h3>What is CSS??</h3>
-            <h3>Why Use CSS??</h3>
-            <h3>How to define CSS??</h3>
-            <h3>How many type of a selector??</h3>
+
+
+    <div class="div1">
+        <div class="nav-main">
+            <ul id="navbar">
+                <li class="res"><a href="#up">UP</a></li>
+                <li class="res"><a href="#bg">BG</a></li>
+                <li class="res"><a href="#border">Border</a></li>
+                <li class="res"><a href="#margin">Mg-Pd W-H</a></li>
+                <li class="res"><a href="#text">Text</a></li>
+                <li class="res"><a href="#font">Font</a></li>
+                <li class="res"><a href="#display">Display</a></li>
+            </ul>
+        </div>
+        <div class="div2" id="up">
+            <h3>What is CSS?? , Why Use CSS?? , How to define CSS?? , How many type of a selector??</h3>
             <ul>
                 <li> CSS stands for Cascading Style Sheets </li>
                 <li> Css is a stylesheet language. </li>
-                <li> It is used to define look and fill of html element or webulage. </li>
+                <li> It is used to define look and fill of html element or webpage. </li>
                 <li> It's save lot of time and easy to design layout of webpage. </li>
                 <li> Extension of css file :- .css </li>
             </ul>
@@ -28,9 +43,13 @@
                 It is used to define styles for web pages with the <b>design</b> ,<b>layout</b>. <br>
                 different devices and screen sizes.
             </p>
-            <img src="cssImage/img_selector.gif" alt="img" />
+            <img class="setImageWidth my-imag" src="cssImage/img_selector.gif" alt="img" />
+            <p class="spacify">
+                <b>SELECTOR :-</b> The selector points to the HTML element you want to style.
+            </p>
+
             <ul>
-                <b>SELECTOR :-</b> <br>
+
                 <li> Universel selector :- <b> * {...} </b> </li>
                 <li> Id selector :- <b> #IdName {...} </b> </li>
                 <li> Class selector :- <b>.className {...} </b> </li>
@@ -38,8 +57,11 @@
                 <li> Groupping selector :- <b>p, h1, h2 {...} </b> </li>
                 <li> Spacified element selector :-<b> p.className {...} </b> </li>
             </ul>
-            <ul>
+            <p>
                 <b>CSS Apply with three way :-</b>
+            </p>
+            <ul>
+
                 <li> Inline CSS </li>
                 <li> Internal CSS </li>
                 <li> External CSS </li>
@@ -63,8 +85,10 @@
                 <li> HSL/HSLA:- HUE SATURATION LIGHTNESS ALFA(OPACITY) :- (&deg; , % , % ,0.0-1) </li>
             </ul>
         </div>
-        <div>
-            <h3>Css background properties</h3>
+        <!-- Back ground property -->
+        <h3 id="bg"></h3>
+        <div class="div2">
+            <h1>CSS BACKGROUND PROPERTY</h1>
             <dl>
                 <dt>&bull; background-color : red;</dt>
                 <dd> - blue , red, rgb(0,241,200), hsl(240,40%,50%)</dd>
@@ -89,8 +113,73 @@
                 <dt>&bull; Shorthand property</dt>
                 <dd>- background: #ffffff url("img_tree.png") no-repeat right top;</dd>
             </dl>
+            <hr>
+            <dl>
+                <dt>&bull; background-size: 300px 200px; </dt>
+                <dd> - auto; cover, contain, 200px</dd>
+            </dl>
+            <hr>
+            <dl>
+                <dt>&bull; background-clip: border-box </dt>
+                <dd> - padding-box;, content-box; </dd>
+            </dl>
 
-            <h3>Css border properties</h3>
+            <div class="bg-clip" style="background-clip: border-box;">
+                "background-clip: border-box;" <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut fuga quae incidunt
+                velit minus itaque, facere error porro mollitia ipsam facilis, hic explicabo, quaerat accusamus
+                deserunt temporibus sed consectetur animi?
+            </div>
+            <div class="bg-clip" style="background-clip: padding-box;">
+                "background-clip: padding-box;" <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut fuga quae incidunt
+                velit minus itaque, facere error porro mollitia ipsam facilis, hic explicabo, quaerat accusamus
+                deserunt temporibus sed consectetur animi?
+            </div>
+            <div class="bg-clip" style="background-clip: content-box;">
+                "background-clip: content-box;" <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut fuga quae incidunt
+                velit minus itaque, facere error porro mollitia ipsam facilis, hic explicabo, quaerat accusamus
+                deserunt temporibus sed consectetur animi?
+            </div>
+            <hr>
+            <dl>
+                <dt>&bull; background-origin: padding-box </dt>
+                <dd> - border-box;, content-box; </dd>
+            </dl>
+
+            <div class="bg-origin" style="background-origin: border-box;">
+                "background-origin: border-box;" <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut fuga quae incidunt
+                velit minus itaque, facere error porro mollitia ipsam facilis, hic explicabo, quaerat accusamus
+                deserunt temporibus sed consectetur animi?
+            </div>
+            <div class="bg-origin" style="background-origin: padding-box;">
+                "background-origin: padding-box;" <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut fuga quae incidunt
+                velit minus itaque, facere error porro mollitia ipsam facilis, hic explicabo, quaerat accusamus
+                deserunt temporibus sed consectetur animi?
+            </div>
+            <div class="bg-origin" style="background-origin: content-box;">
+                "background-origin: content-box;" <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut fuga quae incidunt
+                velit minus itaque, facere error porro mollitia ipsam facilis, hic explicabo, quaerat accusamus
+                deserunt temporibus sed consectetur animi?
+            </div>
+
+            <dl>
+                <dt>background-blend-mode: lighten; </dt>
+                <dd>-luminosity, darken, normal, color...</dd>
+            </dl>
+            <div class="bg-blend-mode"> </div>
+        </div>
+        <!-- Border property -->
+        <h3 id="border"></h3>
+        <div class="div2">
+            <h1>CSS BORDER PROPERTY</h1>
+            <p>
+                The CSS border properties used to define the style, width, and color of an element's border.
+            </p>
             <dl>
                 <dt>&bull; border-width: 5px;</dt>
                 <dd> - 1px, 2px........</dd>
@@ -101,7 +190,7 @@
             </dl>
             <dl>
                 <dt>&bull; border-color: red;</dt>
-                <dd> - ...............................</dd>
+                <dd> - red, blue, rgb(20,22,33), #ff22ff, hsl(120,50%,50%).....</dd>
             </dl>
             <dl>
                 <dt>&bull; Border individual sides :</dt>
@@ -124,44 +213,72 @@
                 <dt>&bull; Border radius</dt>
                 <dd> border-radius: 5px;</dd>
                 <dd> border-radius: 10%;</dd>
+                <dd>border-radius: 100px 500px;</dd>
+                <dd>border-radius: 100px 200px 300px 400px;</dd>
+                <dd>border-top-left-radius: 50px;</dd>
+                <dd>border-top-right-radius: 50px;</dd>
+                <dd>border-bottom-left-radius: 50px;</dd>
+                <dd>border-bottom-right-radius: 50px;</dd>
             </dl>
-            <h3>Css margin and padding properties</h3>
+        </div>
+        <!-- Margin and paddin property -->
+        <h3 id="margin"></h3>
+        <div class="div2">
+            <h1>CSS MARGIN AND PADDING PROPERTY</h1>
             <p>
-                <img src="cssImage/marginPadding3.png" width="300px" alt="hhh"> <br><br>
-                <img src="cssImage/marginpadding.gif" width="400px" alt="hhh"> &nbsp;&nbsp;&nbsp;&nbsp;
-                <img src="cssImage/marginPadding2.png" width="300px" alt="ggg">
+                Margins are used to define the space around elements, outside of any defined borders.
+            </p>
+            <p>
+                Padding is used to defined the space around an element's content, inside of any defined borders.
+            </p>
+            <p>
+                <img class="setImageWidth" src="cssImage/marginPadding3.png" width="300px" alt="hhh">
+                <img class="setImageWidth" src="cssImage/marginpadding.gif" width="400px" alt="hhh">
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <img class="setImageWidth" src="cssImage/marginPadding2.png" width="300px" alt="ggg">
             </p>
             <div style="min-height: 200px; border: none;">
-                <dl style="float: left;">
-                    <dt> &bull; Margin</dt>
-                    <dd>- margin-top : 5px;</dd>
-                    <dd>- margin-right : 5px;</dd>
-                    <dd>- margin-bottom : 5px;</dd>
-                    <dd>- margin-left : 5px;</dd>
-                    <dd>- margin-left : auto;</dd>
-                    <blockquote>
-                        <dt>&bull; Margin shorthands</dt>
-                        <dd>margin : 20px; </dd>
-                        <dd>margin : 20px 40px;</dd>
-                        <dd>margin : 20px 40px 60px 80px;</dd>
-                    </blockquote>
-                </dl>
-                <dl style="float: right;">
-                    <dt> &bull; Padding</dt>
-                    <dd>- padding-top : 5px;</dd>
-                    <dd>- padding-right : 5px;</dd>
-                    <dd>- padding-bottom : 5px;</dd>
-                    <dd>- padding-left : 5px;</dd>
-                    <dd>- padding-left : auto;</dd>
-                    <blockquote>
-                        <dt>&bull; Padding shorthands</dt>
-                        <dd>padding : 20px; </dd>
-                        <dd>padding : 20px 40px;</dd>
-                        <dd>padding : 20px 40px 60px 80px;</dd>
-                    </blockquote>
-                </dl>
+                <div class="floatprop" >
+                    <dl>
+                        <dt> &bull; Margin</dt>
+                        <dd>- margin-top : 5px;</dd>
+                        <dd>- margin-right : 5px;</dd>
+                        <dd>- margin-bottom : 5px;</dd>
+                        <dd>- margin-left : 5px;</dd>
+                        <dd>- margin-left : auto;</dd>
+                        <blockquote>
+                            <dt>&bull; Margin shorthands</dt>
+                            <dd>margin : 20px; </dd>
+                            <dd>margin : 20px 40px;</dd>
+                            <dd>margin : 20px 40px 60px 80px;</dd>
+                        </blockquote>
+                    </dl>
+                </div>
+                <div class="floatprop" >
+                    <dl>
+                        <dt> &bull; Padding</dt>
+                        <dd>- padding-top : 5px;</dd>
+                        <dd>- padding-right : 5px;</dd>
+                        <dd>- padding-bottom : 5px;</dd>
+                        <dd>- padding-left : 5px;</dd>
+                        <dd>- padding-left : auto;</dd>
+                        <blockquote>
+                            <dt>&bull; Padding shorthands</dt>
+                            <dd>padding : 20px; </dd>
+                            <dd>padding : 20px 40px;</dd>
+                            <dd>padding : 20px 40px 60px 80px;</dd>
+                        </blockquote>
+                    </dl>
+                </div>
+
+
             </div>
-            <h3>CSS Height, Width and Max-width Min-width </h3>
+        </div>
+        <!-- Hieght width min-width max-width -->
+        <!-- <h3>CSS Height, Width and Max-width Min-width </h3> -->
+        <div class="div2">
+            <h1>CSS HIEGHT, WIDTH MAX AND MIN WIDTH PROPERTY</h1>
+
             <dl>
                 <dt>&bull; height :50px;</dt>
                 <dd>- height of an element </dd> <br>
@@ -176,7 +293,10 @@
                 <dt>&bull; width :50px;</dt>
                 <dd>- width of an element </dd> <br>
             </dl>
-            <h3>Css outline</h3>
+            <h1>CSS OUTLINE</h1>
+            <p>
+                An outline is a line that is drawn around element's, OUTSIDE borders.
+            </p>
             <dt> outline-style : solid;</dt>
             <dd>...</dd>
             <dt> outline-color : red;</dt>
@@ -188,8 +308,11 @@
             <dt> outline shorthand </dt>
             <dd>- outline :10px dotted red;</dd>
         </div>
-        <div>
-            <h3>Css Text</h3>
+
+        <h3 id="text"></h3>
+        <div class="div2">
+            <h1>CSS TEXT PROPERTY</h1>
+
             <dl>
                 <dt>&bull; color: #f00;</dt>
                 <dd>...</dd><br>
@@ -278,8 +401,10 @@
             </dl>
         </div>
 
-        <div>
-            <h3>CSS Fonts</h3>
+        <h3 id="font">CSS Fonts</h3>
+        <div class="div2">
+            <h1>CSS FONTS PROPERTY</h1>
+
             <dl>
                 <dt>&bull; Generic Font Families</dt>
                 <br><br>
@@ -387,11 +512,12 @@
                 <p></p>
             </dl>
         </div>
-        <div>
+        <h3 id="display"></h3>
+        <div class="div1">
+            <h1>CSS DISPLAY PROPERTY</h1>
 
             <dl>
                 <dt>
-                    <h3>Display Property</h3>
                 </dt><br>
                 <dd>style="display:block" :- <span style="display:block">This is a display block</span></dd><br>
                 <dd> style="display:inline" :- <span style="display:inline">This is a display Inline</span></dd><br>
@@ -496,8 +622,9 @@
             </dl>
         </div>
         <br>
+
+        <h3>Navbar</h3>
         <div>
-            <h3>Navbar</h3>
             <!-- Horrizontal  -->
             <ul class="nav">
                 <li><a href="#"> Home</a></li>

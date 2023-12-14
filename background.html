@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background properties</title>
+    <style>
+        body {
+            margin: 100px;
+            /* background-color: rgb(36, 129, 211); */
+            background-image: url('cssImage/flowerpng-pic.png');
+            background-repeat: no-repeat;
+
+            /* background-size: 600px 600px; */
+            /* background-size: auto; */
+
+            /* background-repeat: repeat-x; */
+            /* background-repeat: repeat-y; */
+
+            /* background-position: bottom; */
+            /* background-position: left; */
+            /* background-position: right; */
+            /* background-position: center; */
+            /* background-position: initial; */
+            /* background-position: inherit; */
+            /* background-position: 220px 50px; */
+            /* background-attachment: inherit; */
+            /* background-position-x: center;     */
+            /* background-position-y: bottom;   */
+            /* left right center */
+
+            background-size: cover;
+            /*  cover,contain,auto, */
+
+
+            /* border*/
+            /* border: 2px; */
+            /* border-style: dotted; */
+            /* color: red; */
+
+            /***Border individual sides :*/
+            /* border-bottom-style: solid red; */
+            /* background-color: red; */
+        }
+
+        .div1 {
+
+            /* border: 10px dotted black;
+            padding: 15px;
+            background: lightblue; */
+            /*  default*/
+            /* background-clip: border-box; */
+            /* background-clip: padding-box; */
+            /* background-clip: content-box; */
+        }
+
+        .div1 {
+            background-image: url("./cssImage/browser.png");
+            background-repeat: no-repeat;
+            border: 10px dotted black;
+            padding: 20px;
+            background-origin: border-box;
+            /* background-origin: content-box; */
+            /*background-origin: padding-box; /*--> default */
+
+
+            background-image: url("./cssImage/img_selector.gif"), url("./cssImage/marginPadding3.png");
+            background-blend-mode: color;
+
+        }
+    </style>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <h1>Backgroud property </h1>
+    <p height="100px">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, incidunt aut doloremque quas quo
+        accusantium sit pariatur repellendus officiis commodi voluptatem temporibus modi perferendis maxime rem
+        asperiores neque explicabo! Blanditiis nihil at officia culpa voluptas corrupti magni! Repellendus molestias
+        adipisci aut molestiae perferendis voluptatem laborum ea sequi ipsa est totam, eaque facere, accusamus quia hic
+        esse odit quasi ipsam a architecto voluptas ullam quas assumenda id. Laborum quae, veritatis iure voluptas ea
+        voluptatum eaque alias magni reprehenderit aliquid odit minus unde quia tempore dolorem nesciunt quibusdam.
+        Expedita fugiat omnis reiciendis! Eligendi sed quisquam blanditiis labore commodi quo quibusdam consequatur amet
+        omnis odio incidunt officia harum minima maxime doloribus, qui fugiat dolorem obcaecati, laboriosam reiciendis
+        dolore libero. Dolores consequatur quis quos quod voluptatem. Laborum nihil incidunt ipsa, quam est repudiandae
+        cupiditate distinctio, animi impedit adipisci nam odit corrupti corporis. Tempora placeat distinctio sapiente
+        fugit, iusto cumque ad corrupti aut molestiae? Accusamus sint nisi perferendis excepturi suscipit doloremque
+        nihil officiis cum eligendi, quae similique dolorum labore consectetur obcaecati laboriosam fugit, recusandae,
+        placeat quaerat ratione adipisci nam porro et. Nulla ipsum molestiae quaerat accusamus ducimus, consectetur
+        suscipit quis neque doloribus eos aperiam minima quia cupiditate harum expedita deserunt voluptas officia
+        delectus maiores optio cumque reprehenderit magni. Commodi natus dolor maiores iste ipsa ratione temporibus,
+        alias tempora laboriosam modi, ea ut ab sed nisi nihil aliquam atque expedita similique vero qui doloribus minus
+        dolore! Similique totam, eius aspernatur incidunt fugiat voluptates provident ipsa ipsum id atque vero aperiam
+        inventore deleniti ducimus dicta, amet necessitatibus assumenda magnam praesentium nobis quasi, cupiditate
+        deserunt sit. Sapiente accusantium, fuga sequi amet obcaecati eligendi laboriosam iste libero nam quae aliquam
+        sit rerum ex tempore distinctio debitis cum tempora. Tempore nemo qui sint facere suscipit nulla ex! Maxime
+        architecto quas nisi eum facere sapiente reprehenderit commodi fugiat optio, eos nam neque earum ex ipsam iusto,
+        delectus accusantium nemo quos officiis molestias nesciunt modi tenetur! At voluptatum beatae dolore omnis nemo,
+        numquam rerum corporis, assumenda veritatis accusantium modi nobis sit sed necessitatibus dolorum laboriosam
+        accusamus magnam reprehenderit, animi dolorem.
+    </p>
+
+
+    <div class="div1">
+        <p>
+            The background extends behind the border.
+            alias magni reprehenderit aliquid odit minus unde quia tempore dolorem nesciunt quibusdam.
+            Expedita fugiat omnis reiciendis! Eligendi sed quisquam blanditiis labore commodi quo quibusdam consequatur
+            amet
+            omnis odio incidunt officia harum minima maxime doloribus, qui fugiat dolorem obcaecati, laboriosam
+            reiciendis
+            dolore libero. Dolores consequatur quis quos quod voluptatem. Laborum nihil incidunt ipsa, quam est
+            repudiandae
+            cupiditate distinctio, animi impedit adipisci nam odit corrupti corporis. Tempora placeat distinctio
+            sapiente
+            fugit, iusto cumque ad corrupti aut molestiae? Accusamus sint nisi perferendis excepturi suscipit doloremque
+            nihil officiis cum eligendi, quae similique dolorum labore consectetur obcaecati laboriosam fugit,
+            recusandae,
+            placeat quaerat ratione adipisci nam porro et. Nulla ipsum molestiae quaerat accusamus ducimus, consectetur
+            suscipit quis neque doloribus eos aperiam minima quia cupiditate harum expedita deserunt voluptas officia
+            delectus maiores optio cumque reprehenderit magni. Commodi natus dolor maiores iste ipsa ratione temporibus,
+            alias tempora laboriosam modi, ea ut ab sed nisi nihil aliquam atque expedita similique vero qui doloribus
+            minus
+            dolore! Similique totam, eius aspernatur incidunt fugiat voluptates provident ipsa ipsum id atque vero
+            aperiam
+            inventore deleniti ducimus dicta, amet necessitatibus assumenda magnam praesentium nobis quasi, cupiditate
+            deserunt sit. Sapiente accusantium, fuga sequi amet obcaecati eligendi laboriosam iste libero nam quae
+            aliquam
+            sit rerum ex tempore distinctio debitis cum tempora. Tempore nemo qui sint facere suscipit nulla ex! Maxime
+            architecto quas nisi eum facere sapiente reprehenderit commodi fugiat optio, eos nam neque earum ex ipsam
+            iusto,
+            delectus accusantium nemo quos officiis molestias nesciunt modi tenetur! At voluptatum beatae dolore omnis
+            nemo,
+            numquam rerum corporis, assumenda veritatis accusantium modi nobis sit sed necessitatibus dolorum laboriosam
+            accusamus magnam reprehenderit, animi dolorem.
+        </p>
+    </div>
+
+
+</body>
+
+</html>
