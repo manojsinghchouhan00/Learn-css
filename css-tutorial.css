@@ -320,6 +320,7 @@ h1 {
   border: 2px solid rgb(60, 0, 255);
   margin: 10px;
   padding: 10px;
+  width: 96.5%;
 }
 
 .img2 {
@@ -355,6 +356,10 @@ h1 {
     width: 90%;
     overflow: hidden;
   }
+  .float{
+    width: 96.5%;
+  }
+  
 }
 @media screen and (min-width: 760px) {
   .setImageWidth {
@@ -365,5 +370,8 @@ h1 {
   }
   .floatprop {
     display: inline-flex;
+  }
+  .float{
+    width: 47%;
   }
 }
