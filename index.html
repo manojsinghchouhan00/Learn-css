@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="cssImage/favicon.ico" type="image/x-icon">
 
-    <title>Css Tutorial</title>
+    <title>CSS study with manraj</title>
 
     <link rel="stylesheet" href="css-tutorial.css">
 
@@ -26,6 +26,7 @@
                 <li class="res"><a href="#margin">Mg-Pd W-H</a></li>
                 <li class="res"><a href="#text">Text</a></li>
                 <li class="res"><a href="#font">Font</a></li>
+                <li class="res"><a href="#float1">Float</a></li>
                 <li class="res"><a href="#display">Display</a></li>
             </ul>
         </div>
@@ -103,7 +104,7 @@
             </dl>
             <dl>
                 <dt>&bull; background-possition : right bottom</dt>
-                <dd> - right top;</dd>
+                <dd> - right top, center center, top, left, right, bottom,initial, inherit, 300px 200px</dd>
             </dl>
             <dl>
                 <dt>&bull; background-attachment: fixed; </dt>
@@ -118,9 +119,17 @@
                 <dt>&bull; background-size: 300px 200px; </dt>
                 <dd> - auto; cover, contain, 200px</dd>
             </dl>
+            <dl>
+                <dt> background-position-x: center; </dt>
+                <dd>- center ,left, right</dd>
+            </dl>
+            <dl>
+                <dt> background-position-y: center; </dt>
+                <dd>- center ,top, bottom</dd>
+            </dl>
             <hr>
             <dl>
-                <dt>&bull; background-clip: border-box </dt>
+                <dt>&bull; background-clip: border-box ; (Default)</dt>
                 <dd> - padding-box;, content-box; </dd>
             </dl>
 
@@ -144,7 +153,7 @@
             </div>
             <hr>
             <dl>
-                <dt>&bull; background-origin: padding-box </dt>
+                <dt>&bull; background-origin: padding-box ; (Default)</dt>
                 <dd> - border-box;, content-box; </dd>
             </dl>
 
@@ -238,7 +247,7 @@
                 <img class="setImageWidth" src="cssImage/marginPadding2.png" width="300px" alt="ggg">
             </p>
             <div style="min-height: 200px; border: none;">
-                <div class="floatprop" >
+                <div class="floatprop">
                     <dl>
                         <dt> &bull; Margin</dt>
                         <dd>- margin-top : 5px;</dd>
@@ -254,7 +263,7 @@
                         </blockquote>
                     </dl>
                 </div>
-                <div class="floatprop" >
+                <div class="floatprop">
                     <dl>
                         <dt> &bull; Padding</dt>
                         <dd>- padding-top : 5px;</dd>
@@ -278,36 +287,81 @@
         <!-- <h3>CSS Height, Width and Max-width Min-width </h3> -->
         <div class="div2">
             <h1>CSS HIEGHT, WIDTH MAX AND MIN WIDTH PROPERTY</h1>
-
             <dl>
+                <dt>&bull; width :50px;</dt>
+                <dd>- width of an element </dd> <br>
+                <dt>&bull; max-width :50px;</dt>
+                <dd>- maximum width of an element </dd> <br>
+                <dt>&bull; min-width :50px;</dt>
+                <dd>- minimum width of an element </dd> <br>
                 <dt>&bull; height :50px;</dt>
                 <dd>- height of an element </dd> <br>
                 <dt>&bull; max-height :50px;</dt>
                 <dd>- maximum height of an element </dd> <br>
-                <dt>&bull; max-width :50px;</dt>
-                <dd>- maximum width of an element </dd> <br>
                 <dt>&bull; min-height :50px;</dt>
                 <dd>- minimum height of an element </dd> <br>
-                <dt>&bull; min-width :50px;</dt>
-                <dd>- minimum width of an element </dd> <br>
-                <dt>&bull; width :50px;</dt>
-                <dd>- width of an element </dd> <br>
+
             </dl>
             <h1>CSS OUTLINE</h1>
             <p>
                 An outline is a line that is drawn around element's, OUTSIDE borders.
             </p>
             <dt> outline-style : solid;</dt>
-            <dd>...</dd>
+            <dd>dotted, dashed, solid, double, groove, ridge, inset, outset, none, hidden</dd>
             <dt> outline-color : red;</dt>
-            <dd>...</dd>
+            <dd>blue, rgb(10,50,241), #ffffff, hsl(10,10%,50%)...</dd>
             <dt> outline-width : 10px; </dt>
-            <dd>...</dd>
+            <dd>thin, medium, thick ...</dd>
+            <dt> outline shorthand </dt>
+            <dd>- outline :10px dotted red;</dd> <br>
             <dt> outline-offset : 15px; </dt>
             <dd>...</dd>
-            <dt> outline shorthand </dt>
-            <dd>- outline :10px dotted red;</dd>
+
+
+            <h1>Overflow Property</h1>
+
+            <dd>overflow property controls what happens to content that is too big to fit into an area.</dd>
+            <dd>overflow : - scroll , visible , hidden ,auto </dd>
+            <dd>overflow-x : - scroll , visible , hidden ,auto </dd>
+            <dd>overflow-y : - scroll , visible , hidden ,auto </dd>
+            <dd>overflow-wrap: normal , break-word , anywhere </dd>
+            <p style="width:50%;height:100px; border:2px solid red;padding: 10px; overflow: auto; ">Lorem ipsum
+                dolor sit, amet consectetur adipisicing elit. Fugit, minus voluptatem. Cupiditate voluptate ullam
+                magni eveniet aliquid quo numquam, esse maxime commodi nisi corporis temporibus reprehenderit quas
+                sequi? Repudiandae ab magni neque ipsum eaque nisi, voluptas quas, officia quos aperiam sunt earum.
+                Dolorem reiciendis nulla laboriosam quia eum hic consectetur, doloribus non molestiae illo
+                distinctio natus expedita voluptas sunt doloremque, a neque possimus laudantium magni beatae odio
+                consequatur esse? Nulla ut autem esse ipsam, dolore provident sed cum rerum debitis incidunt
+                doloribus laborum repellendus unde in iste officia exercitationem quidem molestias neque? Quaerat
+                nam molestias odit corporis ipsam vero nemo, architecto dolores, quasi libero, voluptates laboriosam
+                cupiditate recusandae. Similique iste recusandae exercitationem repellat qui dicta quo. Non illum
+                reiciendis, commodi corrupti ipsum odio nobis eveniet itaque? Eius ab porro vitae recusandae eum
+                repellendus, similique illum dolore reiciendis incidunt excepturi quaerat quibusdam non nesciunt
+                assumenda! Deleniti at, temporibus minima veniam officia nam magnam aperiam laudantium natus
+                voluptatum porro officiis hic rem exercitationem earum impedit assumenda dolor soluta magni,
+                necessitatibus molestias? Incidunt mollitia iure eveniet totam, molestias explicabo unde maiores,
+                deleniti doloremque impedit labore voluptates illum repudiandae reprehenderit? Laudantium voluptatem
+                repellat, autem placeat cumque beatae eligendi quos sed, asperiores soluta veritatis reprehenderit?
+                Aperiam, totam! Rerum alias voluptates repellat impedit dolor fuga hic neque officia aperiam
+                voluptas tempora dolores in ea voluptatibus dignissimos, beatae vero ullam a vitae quis perspiciatis
+                tempore quod repudiandae? Iusto tenetur amet similique aliquid voluptatum praesentium quas cum illum
+                vero aspernatur, quibusdam a deserunt veniam in quis molestias recusandae porro accusamus maiores
+                error id fugiat neque? Tenetur voluptate voluptatum rerum sint nesciunt a nisi nobis, aperiam rem ex
+                impedit numquam quam aut ad voluptatem quia explicabo labore. Nihil architecto veniam excepturi
+                saepe similique, ea corrupti, atque voluptatibus nobis iste adipisci molestiae quibusdam ad sed, rem
+                iusto reiciendis labore quasi maxime quam odit fugiat doloribus nostrum? Sequi dolorem totam
+                excepturi facere fuga sunt at illo, cum corrupti corporis officiis exercitationem adipisci? Maiores
+                qui quasi non saepe perspiciatis, eius, suscipit, quas nulla debitis id recusandae ipsa laboriosam
+                quaerat dolor. Itaque quod ex officia nesciunt sint architecto aperiam doloribus temporibus
+                inventore dolorem aspernatur iure, odit deserunt veritatis neque ab ducimus nisi sequi cupiditate
+                laboriosam illo consequuntur. Sequi iste quae quos cupiditate sunt architecto culpa sint, inventore
+                in, impedit tenetur vel similique delectus tempora porro, unde molestias accusamus odit pariatur
+                voluptate nobis molestiae repellendus voluptatibus! Animi similique quod cumque. Dolores officiis
+                inventore nisi.
+            </p>
         </div>
+
+        <!-- APPLY CSS TEXT PROPERTY -->
 
         <h3 id="text"></h3>
         <div class="div2">
@@ -326,25 +380,31 @@
                     unicode-bidi : bidi-override;
                     }</dd>
                 <dd>- right to left align and opposite</dd><br>
-                <dt>&bull; vertical-align: baseline;</dt>
+                <dt>&bull; vertical-align: baseline; (small image inside a text)</dt>
                 <dd>- baseline, text-top, text-bottom, sub, super</dd>
             </dl>
             <dl>
                 <dt>Text decoration</dt>
-                <dd>&bull; text-decoration: overline;</dd>
-                <dd>&bull; text-decoration: line-through;</dd>
-                <dd>&bull; text-decoration: underline;</dd>
-                <dd>&bull; text-decoration: overline underline;</dd><br>
+                <dd>&bull; text-decoration: overline 5px red; &nbsp;&nbsp; -<span
+                        style="text-decoration: overline 5px red ;">TEXT DECORATION</span></dd>
+                <dd>&bull; text-decoration: line-through; &nbsp;&nbsp; - <span
+                        style="text-decoration: line-through wavy blue;">TEXT DECORATION</span></dd>
+                <dd>&bull; text-decoration: underline wavy; &nbsp;&nbsp; -<span style="text-decoration: underline;">TEXT
+                        DECORATION</span></dd>
+                <dd>&bull; text-decoration: none; &nbsp;&nbsp; -<span style="text-decoration: none;">TEXT
+                        DECORATION</span></dd>
+                <dd>&bull; text-decoration: overline underline line-through; <span
+                        style="text-decoration: overline underline line-through;">TEXT DECORATION</span></dd><br>
                 <dd>h1 {<br>
                     text-decoration-line: overline;<br>
                     text-decoration-color: red;<br>
                     text-decoration-style: wavy;<br>
                     text-decoration-thickness: 5px; <br>
-                    } &nbsp; (solid default, dashed)<br>
+                    } &nbsp; (solid default, dashed,wavy...)<br>
                 </dd>
                 <dd>
                     h1 {<br>
-                    text-decoration-line: line-through;<br>
+                    text-decoration-line: line-through; (required)<br>
                     text-decoration-color: blue;<br>
                     text-decoration-style: double;<br>
                     text-decoration-thickness: 25%;<br>
@@ -358,73 +418,138 @@
                 <dd>p{ text-transform: uppercase; } --- THE TRANSFORMED</dd>
                 <dd>p{ text-transform: lowercase; } --- the transformed</dd>
                 <dd>p{ text-transform: capitalize; } --- The Capitalized</dd>
-                <br><br>
-                <dt>&bull; Text spacing</dt>
-                <dd>p {text-indent: 60px;} -- Indentation of the first line</dd> <br>
-                <dd>h1 {letter-spacing: 5px;} -- T h i s &nbsp; i s &nbsp; h e a d i n g &nbsp; 1</dd>
-                <dd>h2 {letter-spacing: -1px;} -- This is heading 2</dd>
-                <br><br>
-                <dd>p { line-height: 0.75;} -- space arroun two line small</dd>
-                <dd>p { line-height: 2.0;} -- space arroun two line big</dd>
-                <br><br>
-                <dd>h1 { word-spacing: 10px;} -- This &nbsp;&nbsp; is &nbsp;&nbsp;heading&nbsp;&nbsp; 1</dd>
-                <dd>h2 { word-spacing: -2px;} -- This is heading 2</dd>
-                <br><br>
-                <dd>p{ white-space: nowrap;} -- Waste space neglet</dd>
                 <br>
-                <dt>Text shadow</dt>
-                <dd>h1 {text-shadow: 2px 2px;} -- <h1 style="text-shadow: 2px 2px;">horizontal (2px)and vertical(2px)
-                    </h1>
-                </dd>
-                <dd>h1 {text-shadow: 2px 2px red;}--<h1 style="text-shadow: 2px 2px red;">horizontal (2px) vertical(2px)
-                        with color</h1>
-                </dd>
+                <hr>
+                <dt>&bull; Text spacing</dt>
+                <dd>p {text-indent: 100px;}</dd>
+                <p style="text-indent: 100px;">
+                    Indentation of the first line : Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Saepe possimus ratione doloribus ipsa laudantium quaerat labore voluptatibus
+                    voluptatum consequuntur. Nemo, ab quasi! Natus vitae molestiae unde nam ullam qui provident?
+                </p>
+                <hr>
+                <dd>h1 {letter-spacing: 5px;} -- T h i s &nbsp; i s &nbsp; h e a d i n g &nbsp; 1</dd>
+                <p style="letter-spacing: 5px;">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe possimus ratione doloribus ipsa
+                    laudantium quaerat labore voluptatibus provident?
+                </p>
+                <hr>
+                <dd>h2 {letter-spacing: -2px;} -- This is heading 2</dd>
+                <p style="letter-spacing: -2px;">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe possimus ratione doloribus ipsa
+                    laudantium quaerat labore voluptatibus provident?
+                </p>
+                <hr>
+                <dd>p { line-height: 0.75;} -- space arroun two line small</dd>
+                <p style="line-height: 0.75">
+                    Indentation of the first line : Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Saepe possimus ratione doloribus ipsa laudantium quaerat labore voluptatibus
+                    voluptatum consequuntur. Nemo, ab quasi! Natus vitae molestiae unde nam ullam qui provident?
+                </p>
+                <hr>
+                <dd>p { line-height: 2.0;} -- space arroun two line big</dd>
+                <p style="line-height: 2">
+                    Indentation of the first line : Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Saepe possimus ratione doloribus ipsa laudantium quaerat labore voluptatibus
+                    voluptatum consequuntur. Nemo, ab quasi! Natus vitae molestiae unde nam ullam qui provident?
+                </p>
+                <hr>
 
-                <dd>h1 {text-shadow: 2px 2px 5px green;}--<h1 style="text-shadow: 2px 2px green;">horizontal (2px)
-                        vertical(2px) blur(5px) color</h1>
-                </dd>
+                <dd>h1 { word-spacing: 10px;} -- This &nbsp;&nbsp; is &nbsp;&nbsp;heading&nbsp;&nbsp; 1</dd>
+                <p style="word-spacing: 10px">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe possimus ratione doloribus ipsa
+                    laudantium quaerat labore voluptatibus provident?
+                </p>
+                <hr>
+                <dd>h2 { word-spacing: -2px;} -- This is heading 2</dd>
+                <p style="word-spacing: -2px">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe possimus ratione doloribus ipsa
+                    laudantium quaerat labore voluptatibus provident?
+                </p>
+                <hr>
 
-                <dd>h1 {color: white; text-shadow: 2px 2px 4px #000000;}--<h1
-                        style="color: white; text-shadow: 2px 2px 4px #000000;">horizontal (2px) vertical(2px) h1
-                        {text-shadow: 2px 2px 5px red;} color</h1>
-                </dd>
+                <dd>p{ white-space:wrap/ nowrap;} -- Waste space neglet</dd>
+                <p style="white-space: wrap;">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe possimus ratione doloribus ipsa
+                    laudantium quaerat labore voluptatibus provident?
+                </p>
+                <hr>
+                <!-- APPLY TEXT SHADOW -->
 
-                <dd>h1 {text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;}--<h1
-                        style="text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;">horizontal (2px) vertical(2px) h1
-                        {text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;} color</h1>
-                </dd>
+                <h1 style="color: white;text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;">TEXT CSS
+                    SHADOW :- It is a shadow to the text
+                </h1>
+                <p>h1 {text-shadow: 2px 2px 4px red;} --{Horrizontal Vertical Blur Color} </p>
+                <dd>h1 {text-shadow: 2px 2px;} -- </dd>
+                <h1 style="text-shadow: 2px 2px;">horizontal (2px)and vertical(2px)</h1>
+                <hr>
 
-                <dd>h1 {color: white;text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;}--<h1
-                        style="color: white;text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;">color:
-                        white;text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;</h1>
-                </dd>
+                <dd>h1 {text-shadow: 2px 2px red;}--</dd>
+                <h1 style="text-shadow: 2px 2px red;">horizontal (2px) vertical(2px) with color</h1>
+                <hr>
+
+
+                <dd>h1 {text-shadow: 2px 2px 5px green;}--</dd>
+                <h1 style="text-shadow: 2px 2px green;">horizontal (2px) vertical(2px) blur(5px) color</h1>
+                <hr>
+
+
+                <dd>h1 {color: white; text-shadow: 2px 2px 4px #000000;}--</dd>
+                <h1 style="color: white; text-shadow: 2px 2px 4px #000000;">
+                    horizontal (2px) vertical(2px) h1{text-shadow: 2px 2px 5px red;} color
+                </h1>
+                <hr>
+
+
+                <dd>h1 {text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;}--</dd>
+                <h1 style="text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;">horizontal (2px) vertical(2px) h1
+                    {text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;} color
+                </h1>
+                <hr>
+
+                <dd>h1 {color: white;text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;}--</dd>
+                <h1 style="color: white;text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;">color:
+                    white;text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+                </h1>
+                <hr>
             </dl>
         </div>
-
+        <!-- APPLY CSS FONT FAMILIES -->
         <h3 id="font">CSS Fonts</h3>
         <div class="div2">
             <h1>CSS FONTS PROPERTY</h1>
 
             <dl>
                 <dt>&bull; Generic Font Families</dt>
-                <br><br>
+                <br>
                 <dt>Serif :-</dt>
-                <dd style="font-family: serif;">- Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo,
-                    voluptatem.</dd><br>
+                <dd style="font-family: serif;">
+                    - Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo,
+                    voluptatem.
+                </dd><br>
                 <dt>Sans-serif :-</dt>
-                <dd style="font-family: sans-serif;">- Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Maiores, ipsam!</dd><br>
+                <dd style="font-family: sans-serif;">
+                    - Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Maiores, ipsam!
+                </dd><br>
                 <dt>Monospace :-</dt>
-                <dd style="font-family: monospace;">- Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores,
-                    ipsam!</dd><br>
+                <dd style="font-family: monospace;">
+                    - Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores,
+                    ipsam!
+                </dd><br>
 
                 <dt>Cursive :-</dt>
-                <dd style="font-family: cursive;">- Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores,
-                    ipsam!</dd><br>
+                <dd style="font-family: cursive;">
+                    - Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores,
+                    ipsam!
+                </dd><br>
 
                 <dt>Fantasy :-</dt>
-                <dd style="font-family: fantasy;">- Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores,
-                    ipsam!</dd><br>
+                <dd style="font-family: fantasy;">
+                    - Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores,
+                    ipsam!
+                </dd><br>
+                <hr>
 
                 <h3> What are Web Safe Fonts??</h3>
                 <p> Web safe fonts are fonts that are universally installed across all browsers and devices.</p>
@@ -442,21 +567,22 @@
                 <h4>p { font-family: Tahoma, Verdana, sans-serif ,'Trebuchet MS', sans-serif;}</h4>
                 </p>
 
-                <dt>FONT STYLE PROPERTY : -</dt>
-                <dd>
-                    <p style="font-style: normal;">&bull; This is a paragraph in 'normal' style.</p>
-                </dd>
-                <dd>
-                    <p style="font-style: italic;">&bull; This is a paragraph in 'italic' style.</p>
-                </dd>
-                <dd>
-                    <p style="font-style: oblique;">&bull; This is a paragraph in 'oblique' style.</p>
-                </dd>
-                <dd>
-                    <h4>How to apply :- &ltp style="font-style: oblique;"&gt&lt/p&gt</h4>
+                <dt>FONT STYLE PROPERTY : -</dt> <br>
+                <dd> &bull; span{font-style: normal} :-
+                    <span style="font-style: normal;">This is a paragraph in 'normal' style.</span>
                 </dd>
 
-                <dt>FONT WEIGHT PROPERTY : -</dt>
+                <dd>&bull; span{font-style: italic} :-
+                    <span style="font-style: italic;"> This is a paragraph in 'italic' style.</span>
+                </dd>
+                <dd>&bull; span{font-style: oblique} :-
+                    <span style="font-style: oblique;"> This is a paragraph in 'oblique' style.</span>
+                </dd><br>
+                <!-- <dd>
+                    <h4>How to apply :- &ltp style="font-style: oblique;"&gt&lt/p&gt</h4>
+                </dd> -->
+
+                <dt>FONT WEIGHT PROPERTY :- &nbsp;p{font-weight : normal}; (normal, lighter, bold, 300) -</dt>
                 <dd>
                     <p style="font-weight: normal;">&bull; This is a paragraph and text weight 'normal'.</p>
                 </dd>
@@ -469,11 +595,11 @@
                 <dd>
                     <p style="font-weight: 900;">&bull; This is a paragraph and text weight '900'.</p>
                 </dd>
-                <dd>
+                <!-- <dd>
                     <h4>How to apply :- &ltp style="font-weight: 900;"&gt&lt/p&gt</h4>
-                </dd>
+                </dd> -->
 
-                <dt>FONT VAREANT PROPERTY : -</dt>
+                <dt>FONT VAREANT PROPERTY : - p{font-variant: normal;}; (normal, small-caps)</dt>
                 <dd>
                     <p style="font-variant: normal;">&bull; This is a paragraph and text variant 'normal'.</p>
                 </dd>
@@ -481,9 +607,9 @@
                     <p style="font-variant: small-caps;">&bull; This is a paragraph and text variant 'small-caps'.
                     <p>
                 </dd>
-                <dd>
+                <!-- <dd>
                     <h4>How to apply :- &ltp style="font-variant: small-caps;"&gt&lt/p&gt</h4>
-                </dd>
+                </dd> -->
 
                 <dt>FONT SIZE PROPERTY : -</dt>
                 <dd>
@@ -500,95 +626,210 @@
                     <p style="font-size: 5vw;">&bull; This is a paragraph and text size 'Responsive 5vw'.
                     <p>
                 </dd>
-                <dd>
+                <!-- <dd>
                     <h4>How to apply :- &ltp style="font-size: 100%;"&gt&lt/p&gt</h4>
-                </dd>
-
+                </dd> -->
+                <hr>
                 <dt>Shorthand</dt>
                 <dd>Font-size.,font-style, font-variant, font-weight, font-size/line-height, font-family.</dd>
-                <dd> p{font: italic small-caps bold 12px/30px Georgia, serif;}</dd>
+                <dd> p{font: italic small-caps bold 12px/30px Georgia, serif;} :-</dd>
+                <p style="font: italic small-caps bold 18px/30px Georgia, serif;">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora ratione natus vero minus culpa
+                    beatae reprehenderit quisquam odit dolores, quibusdam, officiis rerum deleniti distinctio aperiam in
+                    ipsam eius labore vitae.
+                </p>
+                <hr>
                 <h3>How To Use Google Fonts??</h3>
                 <h3>How To Use ICON in your website??</h3>
                 <p></p>
             </dl>
         </div>
-        <h3 id="display"></h3>
-        <div class="div1">
-            <h1>CSS DISPLAY PROPERTY</h1>
 
+        <!-- FLOT PROPERTY IN CSS -->
+        <div>
+
+            <h1 id="float1">FLOAT PROPERTY IN CSS</h1>
+            <dl>
+                <dt>
+                    float property specifies how an element should float :-
+                </dt>
+                <dd>float :left; , right, none, inherit</dd>
+                <dd>clear :both; , left , right, none, inherit</dd>
+            </dl>
+
+            <!--  -->
+
+            <p>
+                The image will float to the left, and the text in the paragraph will wrap
+                around the image.
+            </p>
+
+
+            <p class="float">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima eveniet, iste enim magni
+                voluptas non unde
+                quasi nihil modi. Eum optio odio reprehenderit saepe cum placeat consequuntur mollitia.
+                Accusantium,
+                perferendis?
+            </p>
+            <p class="float">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima eveniet, iste enim magni
+                voluptas non unde
+                quasi nihil modi. Eum optio odio reprehenderit saepe cum placeat consequuntur mollitia.
+                Accusantium,
+                perferendis?
+            </p>
+            <p class="floatc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum
+                interdum, nisi
+                lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices
+                nec congue
+                eget,
+                auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed
+                ornare eu,
+                lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc
+                sagittis dictum
+                nisi,
+                sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis.
+                Donec vitae
+                dui
+                eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar
+                nibh tempor
+                porta. Cras ac leo purus. Mauris quis diam velit.
+            </p>
+            <h2 style="clear:right">With Clearfix</h2>
+
+            <div style="border: 2px solid red;" class="clearfix">
+                <img class="img2" src="cssImage/marginPadding3.png" alt="Pineapple" width="170" height="170">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...
+            </div>
+
+            <div class="clearfix" style=" border: 2px solid red; overflow: auto;">
+                <div class="left">
+                    <p>LEFT FLOAT-1</p>
+                </div>
+                <div class="left">
+                    <p>LEFT FLOAT-2</p>
+                </div>
+                <div class="left">
+                    <p>LEFT FLOAT-3</p>
+                </div>
+                <div class="left">
+                    <p>LEFT FLOAT-4</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- APPLY  CSS DISPLAY PROPERTIES -->
+        <h3 id="display"></h3>
+        <div class="div2">
+            <h1>CSS DISPLAY PROPERTY</h1>
+            <p>
+                The display property is control layout of webpage.
+            </p>
             <dl>
                 <dt>
                 </dt><br>
-                <dd>style="display:block" :- <span style="display:block">This is a display block</span></dd><br>
-                <dd> style="display:inline" :- <span style="display:inline">This is a display Inline</span></dd><br>
-                <dd> style="display:none" :- <span style="display:none">This is a display none</span></dd><br>
-                <dd>style="visibility:hidden :-" <span style="visibility:hidden">This is a visibility : hidden</span>
-                </dd>
-                <br><br>
+                <dd>"display:block" :- <span>This is a display block example with span tag</span></dd><br>
+                <dd> "display:inline" :- <span>This is a display Inline property example show on ul li </span></dd><br>
+                <dd>"display:contents" :- <span>Makes the container disappear, making the child elements children of the
+                        element the next level up in the DOM</span></dd><br>
+                <dd> "display:none" :- <span>This is a display none mean hide the tag and content
+                        <span style="display:none">content</span>...effect layout</span></dd><br>
+                <dd>"visibility:hidden" :- <span>This is a visibility : hidden is same as display none.
+                        <span style="visibility:hidden;">content</span>...No effect layout</span></span>
+                </dd> <br>
+                <dd>"display:inline-block" :- <span>This is a display inlin-block work as div apply width margin padding
+                        (margin padding width not apply direct text like span as a text element)example with span
+                        tag</span></dd><br>
 
-                <dt>
-                    <h3>Position Property</h3>
-                </dt>
-                <dd>The position property specifies the type of positioning method used for an element (static,
-                    relative, fixed, absolute or sticky).
+                <!-- <dd>"display:inline-flex" :- <span>Displays an element as an inline-level flex container</span></dd><br>
+                <dd>"display:grid" :- <span>Displays an element as a block-level grid container</span></dd><br>
+                <dd>"display:inline-grid" :- <span>	Displays an element as an inline-level grid container</span></dd><br> -->
+            </dl>
+            <div class="flex-container">
+                <div class="flex-item">ITEM_1</div>
+                <div class="flex-item">ITEM_2</div>
+                <div class="flex-item">ITEM_3</div>
+                <div class="flex-item">ITEM_4</div>
+            </div>
+        </div>
+        <!-- CSS POSITION  -->
+        <div class="div2">
+            <h1>Position Property</h1>
+            <dl>
+                <dd>The position property specifies the type of positioning method used for an element (static(default),
+                    relative (positioned relative to it's normal position), fixed, absolute or sticky).
                 </dd><br>
-                <dd>div.static {position: fixed; top:0; left :100px; border: 3px solid #73AD21; }</dd>
-                <h3>Possition in z-index</h3>
-                <dd>"z-index : -1", it will be placed behind the text</dd><br>
-                <dt>
-                    <h3>Overflow Property</h3>
-                </dt>
-                <dd>overflow property controls what happens to content that is too big to fit into an area.</dd>
-                <dd>overflow : - scroll , visible , hidden ,auto </dd>
-                <dd>overflow-x : - scroll , visible , hidden ,auto </dd>
-                <dd>overflow-y : - scroll , visible , hidden ,auto </dd>
-                <dd>overflow-wrap: normal , break-word , anywhere </dd>
-                <p style="width:50%;height:100px; border:2px solid red;padding: 10px; overflow: auto; ">Lorem ipsum
-                    dolor sit, amet consectetur adipisicing elit. Fugit, minus voluptatem. Cupiditate voluptate ullam
-                    magni eveniet aliquid quo numquam, esse maxime commodi nisi corporis temporibus reprehenderit quas
-                    sequi? Repudiandae ab magni neque ipsum eaque nisi, voluptas quas, officia quos aperiam sunt earum.
-                    Dolorem reiciendis nulla laboriosam quia eum hic consectetur, doloribus non molestiae illo
-                    distinctio natus expedita voluptas sunt doloremque, a neque possimus laudantium magni beatae odio
-                    consequatur esse? Nulla ut autem esse ipsam, dolore provident sed cum rerum debitis incidunt
-                    doloribus laborum repellendus unde in iste officia exercitationem quidem molestias neque? Quaerat
-                    nam molestias odit corporis ipsam vero nemo, architecto dolores, quasi libero, voluptates laboriosam
-                    cupiditate recusandae. Similique iste recusandae exercitationem repellat qui dicta quo. Non illum
-                    reiciendis, commodi corrupti ipsum odio nobis eveniet itaque? Eius ab porro vitae recusandae eum
-                    repellendus, similique illum dolore reiciendis incidunt excepturi quaerat quibusdam non nesciunt
-                    assumenda! Deleniti at, temporibus minima veniam officia nam magnam aperiam laudantium natus
-                    voluptatum porro officiis hic rem exercitationem earum impedit assumenda dolor soluta magni,
-                    necessitatibus molestias? Incidunt mollitia iure eveniet totam, molestias explicabo unde maiores,
-                    deleniti doloremque impedit labore voluptates illum repudiandae reprehenderit? Laudantium voluptatem
-                    repellat, autem placeat cumque beatae eligendi quos sed, asperiores soluta veritatis reprehenderit?
-                    Aperiam, totam! Rerum alias voluptates repellat impedit dolor fuga hic neque officia aperiam
-                    voluptas tempora dolores in ea voluptatibus dignissimos, beatae vero ullam a vitae quis perspiciatis
-                    tempore quod repudiandae? Iusto tenetur amet similique aliquid voluptatum praesentium quas cum illum
-                    vero aspernatur, quibusdam a deserunt veniam in quis molestias recusandae porro accusamus maiores
-                    error id fugiat neque? Tenetur voluptate voluptatum rerum sint nesciunt a nisi nobis, aperiam rem ex
-                    impedit numquam quam aut ad voluptatem quia explicabo labore. Nihil architecto veniam excepturi
-                    saepe similique, ea corrupti, atque voluptatibus nobis iste adipisci molestiae quibusdam ad sed, rem
-                    iusto reiciendis labore quasi maxime quam odit fugiat doloribus nostrum? Sequi dolorem totam
-                    excepturi facere fuga sunt at illo, cum corrupti corporis officiis exercitationem adipisci? Maiores
-                    qui quasi non saepe perspiciatis, eius, suscipit, quas nulla debitis id recusandae ipsa laboriosam
-                    quaerat dolor. Itaque quod ex officia nesciunt sint architecto aperiam doloribus temporibus
-                    inventore dolorem aspernatur iure, odit deserunt veritatis neque ab ducimus nisi sequi cupiditate
-                    laboriosam illo consequuntur. Sequi iste quae quos cupiditate sunt architecto culpa sint, inventore
-                    in, impedit tenetur vel similique delectus tempora porro, unde molestias accusamus odit pariatur
-                    voluptate nobis molestiae repellendus voluptatibus! Animi similique quod cumque. Dolores officiis
-                    inventore nisi.
+                <dd>&bull; div.static{positon: static;border;2px solid red}</dd> <br>
+                <dd>&bull; div.relative{positon: relative; left: 100px; border;2px solid red}</dd> <br>
+                <dd>&bull; div.fixed{positon: fixed; top:0; left: 100px; border;2px solid red}</dd> <br>
+                <dd>&bull; div.absolute{positon: absolute; top:0; left: 100px; border;2px solid red}</dd> <br>
+                <dd>&bull; div.sticky{positon: sticky; top:0; border;2px solid red}</dd> <br>
+            </dl>
+            <div
+                style="border: 2px solid rgb(167, 238, 199); width: 95%; min-height: 550px; position: relative; margin: auto; padding: 10px;">
+                position relative <br>
+                <p style="position: sticky; top: 60px; left: 100px; background-color: blueviolet; padding:10px">
+                    i am position sticky.
                 </p>
-                <dt>
-                    <h3>Float property :-</h3>
-                </dt>
-                <dd>float property specifies how an element should float</dd>
-                <dd>float :left; , right, none, inherit</dd>
-                <dd>clear :both; , left , right, none, inherit</dd>
-                <br><br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quas blanditiis ex perferendis
+                praesentium iusto nisi officiis, voluptatum natus debitis possimus quaerat excepturi ipsum
+                repellendus eos numquam nobis quasi dignissimos eligendi distinctio nihil molestiae neque expedita?
+                Minima distinctio sit, voluptates quis, labore eligendi accusamus temporibus facilis architecto
+                quibusdam consectetur in numquam exercitationem optio recusandae, nobis veritatis facere ipsa
+                tenetur nihil quidem quam aliquid omnis aut? Earum ipsam, sint cumque placeat aut deserunt fugit
+                dolores molestiae id, suscipit ratione. Quo excepturi blanditiis, asperiores perspiciatis amet velit
+                molestiae quam atque, nemo nisi sunt laudantium illum magni similique non accusantium voluptatibus
+                debitis repudiandae necessitatibus soluta dolores consectetur minima quia. Saepe distinctio
+                consectetur quia, veritatis dolorem fugit reprehenderit harum ratione ullam vel iure soluta
+                incidunt, tempore libero molestias, dolores corrupti architecto neque fugiat ea adipisci?
+                Voluptates, beatae facilis. Officia consequuntur a qui, facilis quae nisi debitis suscipit rem omnis
+                vero sapiente similique sed repellat incidunt eius ad velit consequatur tenetur, labore at,
+                voluptates sunt fugit voluptate. Quo vel quia nesciunt fugit ipsa magni perspiciatis eligendi ad
+                fugiat mollitia sit deserunt saepe quibusdam eos voluptatem natus corporis numquam dolor ut
+                adipisci, vitae placeat temporibus molestias totam. Voluptatibus voluptatum nam magni veniam eveniet
+                qui, aperiam aspernatur?
+                <p style="position: absolute; bottom: 10px;right: 10px; border: 2px solid red; width: 100px;">
+                    i am position absolute.
+                </p>
+                <p style="position: static; top: 100px;right: 100px; border: 2px solid red; width: 100px;">
+                    i am position static.
+                </p>
+                <p style="position: relative;  left:30px;  border: 2px solid red; width: 100px;">
+                    i am position Relative.
+                </p>
+                <!-- <p style="position: fixed; top: 100px;right: 100px; border: 2px solid red; width: 100px;">
+                        i am position fixed.
+                    </p> -->
 
-                <dt>
-                    <h3>Combinators selectors :-</h3>
-                </dt>
-                <dd>A combinator selector is the relationship between the selectors.</dd><br>
+            </div>
+            <!-- CSS Z-INDEX -->
+            <h1>Possition in z-index</h1>
+            <div style="border: 1px solid rgb(154, 124, 182); position: relative;">
+
+                <dl>
+                    <dt>
+                        When elements are positioned, they can overlap other elements. <br><br>
+
+                        The z-index property specifies the stack order of an element (which element should be placed in
+                        front of, or behind, the others). <br><br>
+
+                        An element can have a positive or negative stack order:
+
+                    </dt><br>
+                    <dd>"z-index : -1", it will be placed behind the text</dd>
+                </dl>
+
+                <img style=" position: absolute; left: 0px; top: 0px;
+                 z-index: -1; width: 100%;" src="cssImage/flowerpng-pic.png" alt="">
+            </div>
+
+            <!-- CSS COMBINATORS-->
+
+            <h1>CSS COMBINATORS</h1>
+            <P>A combinator explains relationship between two or more selectors.</P>
+            <dl>
                 <dt>&bull; There are four different combinators in CSS:,</dt>
                 <dd>(1) descendant selector (space) </dd>
                 <dd>(2) child selector (>) </dd>
@@ -598,32 +839,21 @@
                 <dd>div p {...} :- selects all "p" elements inside "div" elements:</dd>
                 <dd>div > p {...} :- selects all "P" elements that are children of a "div" element</dd>
                 <dd>div + p {...} :- selects the first "P" element that are placed immediately after "div" elements</dd>
-                <dd>div ~ p {...} :- selects all "P" elements that are next siblings of "div" elements</dd>
+                <dd>div ~ p {...} :- selects all "P" elements that are next siblings of "div" elements. ( target all p
+                    selector that is present after div)</dd>
                 <br><br>
+            </dl>
+            <h1>Opacity or Transparency</h1>
+            <dl>
 
-                <dt>
-                    <h3>Pseudo-classes :- </h3>
-                </dt>
-                <dd>- A pseudo-class is used to define a special state of an element</dd>
-                <dd>selector:pseudo-class { property: value;}</dd><br>
-                <dd>selector::pseudo-element {property: value;}</dd><br>
-
-                <dt>For exmaple : -</dt>
-                <dd>- Style an element when a user mouses over it <span class="pseudo"><a href="">Mouse over</a></span>
-                </dd>
-                <dd>- Style visited and unvisited links differently <span class="pseudo"><a href="">Mouse
-                            over</a></span></dd>
-                <dd>- Style an element when it gets focus</dd><br><br>
-                <dt>
-                    <h3>Opacity or Transparency</h3>
-                </dt>
                 <dd>img { opacity: 0.5; }</dd>
                 <dd> img:hover { opacity: 1.0; }</dd>
             </dl>
         </div>
         <br>
+        <!-- CREATE NAVBAR AND SIDBAR  -->
 
-        <h3>Navbar</h3>
+        <h3>How to create Navigation bar??</h3>
         <div>
             <!-- Horrizontal  -->
             <ul class="nav">
@@ -643,15 +873,17 @@
                 <li><a href="#about">About</a></li>
             </ul>
         </div>
+        <!-- CREATE DROPDOWN BUTTON  -->
+        <h1>Dropdown</h1>
+
         <div>
-            <h3>Dropdown</h3>
 
             <h2>Aligned Dropdown Content</h2>
             <p>Determine whether the dropdown content should go from left to right or right to left with the left
                 and right properties.</p>
 
-            <div class="dropdown">
-                <button class="dropbtn">Left</button>
+            <div class="dropdown" style="float: left;">
+                <button class="dropbtn" >Left</button>
                 <div class="dropdown-content" style="left:0;">
                     <a href="#">Link 1</a>
                     <a href="#">Link 2</a>
@@ -659,8 +891,8 @@
                 </div>
             </div>
 
-            <div class="dropdown">
-                <button class="dropbtn">Right</button>
+            <div class="dropdown" style="float: right;">
+                <button class="dropbtn" >Right</button>
                 <div class="dropdown-content">
                     <a href="#">Link 4</a>
                     <a href="#">Link 5</a>
@@ -668,11 +900,11 @@
                 </div>
             </div>
         </div>
-
-        <div>
+        <!-- DROPDOWN BOTTON INDIDE NAVIGATION BAR -->
+        <div style="clear: both;">
 
             <h3>Dropdown Menu inside a Navigation Bar</h3>
-            <ul>
+            <ul class="drop-nav">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#news">News</a></li>
                 <li class="dropdown-1">
@@ -688,7 +920,7 @@
             <!-- <p>Hover over the "Dropdown" link to see the dropdown menu.</p> -->
 
         </div>
-        <textarea>
+        <textarea rows="10" cols="wrap">
 
             CSS UNITS :- CSS has several different units for expressing a length.
 
@@ -697,18 +929,99 @@
                          relative :- em, ex, ch , rem, vw, vh, vmax, vmin, %
             
         </textarea>
-        <!-- /css units -->
-        <!-- <h3>CSS Image Sprites</h3> -->
-        <!-- <h3>CSS Attribute Selectors</h3> -->
-        <!-- <h3>CSS Forms</h3> -->
-        <!-- <h3>CSS counters</h3> -->
-        <!-- <h3>CSS Website layout</h3> -->
-        <!-- css flex-box -->
-        <!-- css Animation -->
-        <!-- css Transforms -->
-        <!-- css Transitions -->
 
+
+        <!-- link and link cursur property -->
+        <div class="div2">
+            &bull; a:link - a normal, unvisited link <br><br>
+            &bull; a:visited - a link the user has visited <br><br>
+            &bull; a:hover - a link when the user mouses over it <br><br>
+            &bull; a:active - a link the moment it is clicked <br><br>
+            <p>Mouse over the words to change the cursor.</p>
+            <p>span{ cursor:auto; }</p>
+            <span class="link-cursor" style="cursor:auto">auto</span>
+            <span class="link-cursor" style="cursor:crosshair">crosshair</span>
+            <span class="link-cursor" style="cursor:default">default</span>
+            <span class="link-cursor" style="cursor:e-resize">e-resize</span>
+            <span class="link-cursor" style="cursor:help">help</span>
+            <span class="link-cursor" style="cursor:move">move</span>
+            <span class="link-cursor" style="cursor:n-resize">n-resize</span>
+            <span class="link-cursor" style="cursor:ne-resize">ne-resize</span>
+            <span class="link-cursor" style="cursor:nw-resize">nw-resize</span>
+            <span class="link-cursor" style="cursor:pointer">pointer</span>
+            <span class="link-cursor" style="cursor:progress">progress</span>
+            <span class="link-cursor" style="cursor:s-resize">s-resize</span>
+            <span class="link-cursor" style="cursor:se-resize">se-resize</span>
+            <span class="link-cursor" style="cursor:sw-resize">sw-resize</span>
+            <span class="link-cursor" style="cursor:text">text</span>
+            <span class="link-cursor" style="cursor:w-resize">w-resize</span>
+            <span class="link-cursor" style="cursor:wait">wait</span>
+
+            <h1>LIST PROPERTY</h1>
+            <div>
+                <dl>
+                    <dt>ul{list-style-type : circle;} </dt>
+                    <dd> -circle, square, upper-roman, lower-alpha, none </dd> <br>
+                    <dt>ul{ list-style-image : url('image.gif');} </dt>
+                    <dd> </dd> <br>
+                    <dt>ul{ list-style-position : outside;} </dt>
+                    <dd> - outside, inside </dd> <br>
+
+                    <dt>Shothand property </dt>
+                    <dd>list-style: type position url;</dd>
+                    <dd>list-style: square inside url("sqpurple.gif");</dd> <br>
+                </dl>
+                <ul class="list-style" style="list-style-type : circle;">
+                    <li>list-style-type: circle</li>
+                    <li>list-style-type: circle</li>
+                    <li>list-style-type: circle</li>
+                </ul>
+
+                <ul class="list-style" style="list-style-position: inside;">
+                    <li>list-style-position: inside</li>
+                    <li>list-style-position: inside</li>
+                    <li>list-style-position: inside</li>
+                </ul>
+                <ul class="list-style" style="list-style : circle outside  url('cssImage/favicon.ico');">
+                    <li>list-style: type position image</li>
+                    <li>list-style: circle outside image</li>
+                    <li>list-style: circle outside image</li>
+                </ul>
+                <!-- <ul class="list-style" style="list-style-image: url('cssImage/favicon.ico');">
+                    <li>list-style-image</li>
+                    <li>list-style-position</li>
+                    <li>inside, outside</li>
+                </ul> -->
+            </div>
+
+        </div>
     </div>
+
+    <!-- /css units -->
+    <!-- <h3>CSS Image Sprites</h3> -->
+    <!-- <h3>CSS Attribute Selectors</h3> -->
+    <!-- <h3>CSS Forms</h3> -->
+    <!-- <h3>CSS counters</h3> -->
+    <!-- <h3>CSS Website layout</h3> -->
+    <!-- css flex-box -->
+    <!-- css Animation -->
+    <!-- css Transforms -->
+    <!-- css Transitions -->
+
+    <!--   <dt>
+        <h3>Pseudo-classes :- </h3>
+    </dt>
+    <dd>- A pseudo-class is used to define a special state of an element</dd>
+    <dd>selector:pseudo-class { property: value;}</dd><br>
+    <dd>selector::pseudo-element {property: value;}</dd><br>
+
+    <dt>For exmaple : -</dt>
+    <dd>- Style an element when a user mouses over it <span class="pseudo"><a href="">Mouse over</a></span>
+    </dd>
+    <dd>- Style visited and unvisited links differently <span class="pseudo"><a href="">Mouse
+                over</a></span></dd>
+    <dd>- Style an element when it gets focus</dd><br><br> -->
+
 
 </body>
 
