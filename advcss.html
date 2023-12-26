@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced css</title>
+</head>
+
+<body>
+    <h1> CSS COLOR GRADIENTS </h1>
+    <p>
+        CSS gradients mean display smooth transitions between two or more specified colors. <br><br>
+
+        There are three types of gradients color : <br><br>
+
+        &bull; Linear Gradients (goes down/up/left/right/diagonally) <br>
+        &bull; Radial Gradients (defined by their center) <br>
+        &bull; Conic Gradients (rotated around a center point) <br>
+    </p>
+    <h3>CSS Linear Gradients</h3>
+    <p>
+        To create a linear gradient you must define at least two color stops. You can also set a starting point and a
+        direction (or an angle) along with the
+        gradient effect.
+
+        Syntax : -
+        background-image: linear-gradient(direction, color-stop1, color-stop2, ...);
+    </p>
+    <div style="background-image: linear-gradient(red, yellow); height: 100px;">
+        background-image: linear-gradient(red, yellow); (direction top to bottom (Default))
+    </div>
+    <br><br>
+    <div style="background-image: linear-gradient(to right ,red, yellow); height: 100px;">
+        background-image: linear-gradient(to right, red, yellow); (to right, to bottom, to top, to left)
+    </div>
+    <br><br>
+    <div style="background-image: linear-gradient(to top left, red, yellow);; height: 100px;">
+        DIAGONAL : - background-image: linear-gradient(to top left, red, yellow); (to top left, to top right, to bottom
+        left, to bottom right)
+    </div>
+    <br><br>
+    <div style="background-image: linear-gradient(180deg, red, yellow);; height: 100px;">
+        DEGREE : - background-image: linear-gradient(180deg, red, yellow);
+    </div>
+    <br><br>
+    <div style="background-image: linear-gradient(to left, red, yellow,blue, green); height: 100px;">
+        multiple color : - background-image: linear-gradient(to left, red, yellow,blue,green);
+    </div>
+    <br><br>
+    <div style="background-image: repeating-linear-gradient(to left, red 5%, yellow 10%,green 15%); height: 100px;">
+        REPEATING-LINEAR-GRADIENT COLOR : - background-image: repeating-linear-gradient(to left, red 5%, yellow
+        10%,green 15%);
+    </div>
+    <br><br>
+    <div style="background-image: repeating-linear-gradient(red, yellow 10%, green 20%); height: 100px;">
+        REPEATING-LINEAR-GRADIENT COLOR : - background-image: repeating-linear-gradient( red , yellow 10%, green 15%);
+    </div>
+    <br><br>
+    <div style="background-image: repeating-linear-gradient(45deg,red, yellow 5%, green 10%); height: 250px;">
+        REPEATING-LINEAR-GRADIENT COLOR : - background-image: repeating-linear-gradient(45deg, red , yellow 10%, green
+        15%);
+    </div>
+
+    <br><br>
+    <div style="background-image: repeating-linear-gradient(45deg,red, yellow 0, green 2%); height: 250px;">
+        REPEATING-LINEAR-GRADIENT COLOR : - background-image: repeating-linear-gradient(45deg,red, yellow 0, green 2%);
+        height: 250px;
+    </div>
+
+    <h1>CSS RADIAL GRADIENT</h1>
+
+    <div style="background-image: radial-gradient(red, blue, black);  height: 200px;">
+        background-image: radial-gradient(red, blue, black); height: 200px;
+    </div> <br><br>
+    <div style="background-image: radial-gradient(red, yellow 10%, green 50%);  height: 200px;">
+        background-image: radial-gradient(red, yellow 10%, green 15%); height: 200px;
+    </div><br><br>
+    <div style="background-image: radial-gradient(circle,red, yellow 10%, green 20%);  height: 200px;">
+        background-image: radial-gradient(circle,red, yellow 10%, green 15%); height: 200px; || ellipse(default)
+    </div> <br><br>
+
+
+    <div
+        style="background-image: radial-gradient(farthest-side at 70% 50%,red, yellow 10%, green 20%);  height: 200px;">
+        background-image: radial-gradient(farthest-side at 70% 50%,red, yellow 10%, green 15%); height: 200px; ||
+        ellipse(default)
+    </div> <br><br>
+    <div style="background-image: radial-gradient(closest-side at 70% 50%,red, yellow 10%, green 20%);  height: 200px;">
+        background-image: radial-gradient(closest-side at 70% 50%,red, yellow 10%, green 15%); height: 200px; ||
+        ellipse(default)
+    </div><br><br>
+    <div
+        style="background-image: radial-gradient(farthest-corner at 70% 50%,red, yellow 10%, green 20%);  height: 200px;">
+        background-image: radial-gradient(farthest-corner at 70% 50%,red, yellow 10%, green 15%); height: 200px; ||
+        ellipse(default)
+    </div><br><br>
+    <div
+        style="background-image: radial-gradient(closest-corner at 70% 50%,red, yellow 10%, green 20%);  height: 200px;">
+        background-image: radial-gradient(closest-corner at 70% 50%,red, yellow 10%, green 15%); height: 200px; ||
+        ellipse(default)
+    </div>
+
+
+    <h1>RADIAL REPEATING GRADIENTS</h1>
+    <div style="background-image: repeating-radial-gradient(red, yellow 1%, green 5%);  height: 200px;">
+        background-image: radial-gradient(red, yellow 1%, green 5%); height: 200px; || ellipse(default)
+    </div>
+    <h1>CSS CONIC GRADIENTS</h1>
+    <p>color rotated around a center point.</p>
+    <div style="background-image: conic-gradient(red, blue, green);  height: 200px; ">
+        background-image: conic-gradient( yellow, green ); height: 200px; || ellipse(default)
+    </div><br><br>
+    <div style="background-image: conic-gradient(red 45deg, blue 120deg, green 235deg);  height: 200px; ">
+        background-image: conic-gradient( red 45deg, blue 60deg, green 90deg ); height : 200px; || ellipse(default)
+    </div><br><br>
+    <div style="background-image: repeating-conic-gradient(red 141deg, blue 120deg, green 180deg);  height: 200px; ">
+        background-image: repeating-conic-gradient( red 141deg, blue 120deg, green 180deg ); height : 200px; ||
+        ellipse(default)
+    </div><br><br>
+    <div
+        style="background-image: repeating-conic-gradient(red 5%, yellow 10%,green 15%,black 20%,skyblue 25%);border-radius:50%;  height: 200px; ">
+        background-image: repeating-conic-gradient(red 5%, yellow 10%,green 15%,black 20%,skyblue 25%); ||
+    </div><br><br>
+
+    <div style="display: flex; flex-wrap: wrap;">
+        <div
+            style="background-image: conic-gradient(red , blue , green );  height: 200px; border-radius:50%; width:250px; margin: 10px;">
+            background-image: conic-gradient( red, blue , green ); height : 200px; ||
+        </div>
+        <div
+            style="background-image: conic-gradient( from 90deg, red 0deg, red 90deg , blue 90deg, blue 180deg , green 180deg, green 270deg, yellow 270deg, yellow 360deg );  height: 200px; border-radius:50%; width:250px;margin: 10px;">
+            background-image: conic-gradient( from 90deg, red 0deg, red 90deg , blue 90deg, blue 180deg , green 180deg,
+            green 270deg,
+            yellow 270deg, yellow 360deg ); height : 200px; ||
+        </div>
+        <div
+            style="background-image: conic-gradient(from 90deg, red, yellow, green); height: 200px; border-radius:50%; width:250px;margin: 10px;">
+            background-image: conic-gradient(from 90deg, red, yellow, green); height : 200px; ||
+        </div>
+        <div
+            style="background-image: conic-gradient(at 60% 45%, red, yellow, green); height: 200px; border-radius:50%; width:250px;margin: 10px;">
+            background-image: conic-gradient(at 60% 45%, red, yellow, green); height : 200px; ||
+        </div>
+
+    </div>
+    <h1>Explain the box shadow</h1>
+    <div style="display: flex; flex-wrap: wrap;">
+        <div style="box-shadow: 5px 5px;background-color: aliceblue; height:150px;  width:150px;margin: 10px;">
+            box-shadow: 5px 5px
+        </div>
+        <div style="box-shadow: 5px 5px red;background-color: aliceblue; height:150px;  width:150px;margin: 10px;">
+            box-shadow: 5px 5px red
+        </div>
+        <div style="box-shadow: 5px 5px 5px red;background-color: aliceblue; height:150px;  width:150px;margin: 10px;">
+            box-shadow: 5px 5px 5px red
+        </div>
+        <div
+            style="box-shadow: 5px 5px 5px 5px red;background-color: aliceblue; height:150px;  width:150px;margin: 10px;">
+            box-shadow: 5px 5px 5px 5px red
+        </div>
+        <div
+            style="box-shadow: 5px 5px 5px 5px red inset;background-color: aliceblue; height:150px;  width:150px;margin: 10px;">
+            box-shadow: 5px 5px 5px 5px red inset
+        </div>
+        <div
+            style="box-shadow: -5px 5px 5px 5px red; background-color: aliceblue; height:150px;  width:150px;margin: 10px;">
+            box-shadow: -5px 5px 5px 5px red;
+        </div>
+        <div
+            style="box-shadow: 5px -5px 5px 5px red; background-color: aliceblue; height:150px;  width:150px;margin: 10px;">
+            box-shadow: 5px -5px 5px 5px red;
+        </div>
+        <div
+            style="box-shadow: -5px -5px 5px 5px red; background-color: aliceblue; height:150px;  width:150px;margin: 10px;">
+            box-shadow: -5px -5px 5px 5px red;
+        </div>
+    </div>
+</body>
+
+</html>

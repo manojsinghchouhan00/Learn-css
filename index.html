@@ -333,6 +333,12 @@
             <dd>overflow-x : - scroll , visible , hidden ,auto </dd>
             <dd>overflow-y : - scroll , visible , hidden ,auto </dd>
             <dd>overflow-wrap: normal , break-word , anywhere </dd>
+            <!-- <dd>text-overflow: clip; ellipsis(...) </dd> -->
+            <!-- <span style="text-overflow: clip; width: 50px;height: 10px; border:2px solid red; display:inline-block">Lorem ipsum dolor sit amet consectetur! Deleniti?</span> -->
+            <!-- <span style="text-overflow: ellipsis; width: 50px;height: 10px; border:2px solid red; display:inline-block">Lorem ipsum dolor sit amet consectetur! Deleniti?</span> -->
+            <dd> white-space: nowrap; </dd>
+            <dd> word-wrap: break-word, keep-all,break-all;</dd>
+            <!-- <dd> writing-mode: horizontal-tb; (vertical-rl)</dd> -->
             <p style="width:50%;height:100px; border:2px solid red;padding: 10px; overflow: auto; ">Lorem ipsum
                 dolor sit, amet consectetur adipisicing elit. Fugit, minus voluptatem. Cupiditate voluptate ullam
                 magni eveniet aliquid quo numquam, esse maxime commodi nisi corporis temporibus reprehenderit quas
@@ -754,12 +760,49 @@
                 <dd>"display:grid" :- <span>Displays an element as a block-level grid container</span></dd><br>
                 <dd>"display:inline-grid" :- <span>	Displays an element as an inline-level grid container</span></dd><br> -->
             </dl>
+            <div style="overflow: auto;">
+                <div style="float: left; margin:5px; padding: 5px; width: 200px;">
+
+                    .flex-container {
+                    <blockquote>
+                        <br>display: flex; <br>
+                        justify-content: center; <br>
+                        flex-wrap: wrap;
+                    </blockquote>
+                    }
+                </div>
+                <div style="float: left; margin:5px; padding: 5px; width: 200px;">
+                    .flex-item { <br>
+                    border: 4px dotted red; <br>
+                    margin: 2px; <br>
+                    width: 100px; <br>
+                    height: 100px; <br>
+                    background-color: #3e8e41; <br>
+                    display: flex; <br>
+                    justify-content: center; <br>
+                    /* align center with x-axis */ <br>
+
+                    align-items: center; <br>
+                    /* align center with y-axis */ <br>
+                    }
+                </div>
+                <div style="float: left; margin:5px; padding: 5px; width: 250px;">
+                    &lt;div class="flex-container"&gt; <br>
+                    &lt;div class="flex-item"&gt;ITEM_1&lt;/div&gt; <br>
+                    &lt;div class="flex-item"&gt;ITEM_2&lt;/div&gt; <br>
+                    &lt;div class="flex-item"&gt;ITEM_3&lt;/div&gt; <br>
+                    &lt;div class="flex-item"&gt;ITEM_4&lt;/div&gt; <br>
+                    &lt;/div&gt;
+                </div>
+
+            </div>
             <div class="flex-container">
                 <div class="flex-item">ITEM_1</div>
                 <div class="flex-item">ITEM_2</div>
                 <div class="flex-item">ITEM_3</div>
                 <div class="flex-item">ITEM_4</div>
             </div>
+
         </div>
         <!-- CSS POSITION  -->
         <div class="div2">
@@ -927,15 +970,33 @@
             <!-- <p>Hover over the "Dropdown" link to see the dropdown menu.</p> -->
 
         </div>
-        <textarea rows="10" cols="wrap">
+        <div class="div2">
+            <h1>CSS UNITS</h1>
 
-            CSS UNITS :- CSS has several different units for expressing a length.
+            <b>
+                CSS has several different units for expressing a length.
 
-                         There are two types of length units: absolute and relative.
-                         absolute :- mm, cm, inch ,px* , pt, pc ,
-                         relative :- em, ex, ch , rem, vw, vh, vmax, vmin, %
-            
-        </textarea>
+                There are two types of length units: absolute and relative.
+            </b> <br>
+            <blockquote>
+                <b>absolute</b> (fixed) :- mm, cm, in(inch) ,px* , pt (point), pc (picas) , <br> <br>
+                <b>relative</b> :- <br> <br>
+                em : - Relative font-size of the element (2em mean 2x size of the current font relate to parrent), <br>
+                <br>
+
+                ex : - x-height , <br> <br>
+                ch : - relative to the width of the character , <br> <br>
+                rem : - The root element font-size relative to the browsers base font-size, and will not inherit from
+                its parents., <br> <br>
+                vw : - The viewport font-size relative to the width of the viewport* (change font size according to
+                screen size), <br> <br>
+                vh : - height of the viewport*, <br> <br>
+                vmax ; - viewport's* smaller dimension, <br> <br>
+                vmin : - viewport's* larger dimension, <br> <br>
+                % : - font-size relative to the current font-size.
+            </blockquote>
+
+        </div>
 
 
         <!-- link and link cursur property -->
@@ -1002,6 +1063,20 @@
             </div>
 
         </div>
+
+
+        <h1><a href="attributselector.html">ATTRIBUTE SELECTOR</a></h1>
+
+        <h1><a href="csslayout.html">LAYOUT OF CSS</a></h1>
+
+
+        <!-- CSS MATH FUNCTION -->
+        <h1><a href="mathfunc.html" target="_blank"> MATH FUNCTION</a></h1>
+        <h1><a href="counterfunction.html" target="_blank"> COUNTER FUNCTION</a></h1>
+
+        <div>
+            importance of any css property : - p { color : red !important; }
+        </div>
     </div>
 
     <!-- /css units -->
@@ -1014,6 +1089,8 @@
     <!-- css Animation -->
     <!-- css Transforms -->
     <!-- css Transitions -->
+    <!-- CSS Counters -->
+    <!-- CSS Image Sprites -->
 
     <!--   <dt>
         <h3>Pseudo-classes :- </h3>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            counter-reset: section;
+        }
+
+        h2::before {
+            counter-increment: section;
+            content: "Section-"counter(section) ": ";
+        }
+
+        ul {
+            counter-reset: count;
+            list-style-type: none;
+        }
+
+        li::before {
+            counter-increment: count;
+            content: counters(count, ".") " ";
+        }
+        div{
+            border: 2px solid red;
+            padding: 20px;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div >
+
+        <h1>Using CSS Counters</h1>
+
+        <h2>HTML Tutorial</h2>
+        <h2>CSS Tutorial</h2>
+        <h2>JavaScript Tutorial</h2>
+        <h2>Python Tutorial</h2>
+        <h2>SQL Tutorial</h2>
+
+        <h1>Nesting Counters</h1>
+
+
+        <ul>
+            <li>item</li>
+            <li>item
+                <ul>
+                    <li>item</li>
+                    <li>item</li>
+                    <li>item
+                        <ul>
+                            <li>item</li>
+                            <li>item</li>
+                            <li>item</li>
+                        </ul>
+                    </li>
+                    <li>item</li>
+                </ul>
+            </li>
+            <li>item</li>
+            <li>item</li>
+        </ul>
+
+        <ul>
+            <li>item</li>
+            <li>item</li>
+        </ul>
+
+
+    </div>
+</body>
+
+</html>

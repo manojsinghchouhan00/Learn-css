@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attributeName selector</title>
+</head>
+
+<body>
+    <div class="div2">
+        <table border="1" width="80%" style="border-collapse:collapse;">
+            <tr>
+                <th>SELECTOR</th>
+                <th>EXAMPLE</th>
+                <th>THEORY</th>
+            </tr>
+
+            <tr>
+                <td>[attributeName]</td>
+                <td>a[target]</td>
+                <td>Selects all a elements with a target Attribute</td>
+            </tr>
+            <tr>
+                <td>[attributeName=value]</td>
+                <td>a[target="_blank"]</td>
+                <td>Selects all a elements with target="_blank"</td>
+            </tr>
+            <tr>
+                <td>[attributeName~=value]</td>
+                <td>[title~="flower"]</td>
+                <td>Selects all elements with a title attribute that contains a space-separated words, one of which is "flower"</td>
+            </tr>
+            <tr>
+                <td>[attributeName|=value]</td>
+                <td>[class|="first-page"]</td>
+                <td>Selects all elements with a class attributeName value (first-page) starting with "first" the specified value followed by a hyphen (-)</td>
+            </tr>
+            <tr>
+                <td>[attributeName^=value]</td>
+                <td>[class^="first"]</td>
+                <td>Selects all <a> elements with a class attributeName value starting with "first" (like-"first-page,firstPage")</td>
+            </tr>
+            <tr>
+                <td>[attributeName$=value]</td>
+                <td>[class$="test"]</td>
+                <td>Selects all <a> elements with a class attributeName value ending with "test"</td>
+            </tr>
+            <tr>
+                <td> [attributeName*=value] </td>
+                <td>[class*="te"]</td>
+                <td>Selects all <a> elements with a class attributeName value containing the substring "te"</td>
+            </tr>
+        </table>
+
+
+
+
+
+
+
+
+
+    </div>
+</body>
+
+</html>
