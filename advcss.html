@@ -5,6 +5,155 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Advanced css</title>
+    <style>
+        /* Transition properties */
+        div {
+            margin: 10px;
+            padding: 20px;
+            overflow: hidden;
+        }
+
+        .transition1 {
+            width: 100px;
+            height: 100px;
+            background: yellow;
+            transition: width 3s;
+        }
+
+        .transition1:hover {
+            background: green;
+            width: 500px;
+        }
+
+        .transition2 {
+            width: 100px;
+            height: 100px;
+            background: red;
+            transition: width 4s, height 2s;
+        }
+
+        .transition2:hover {
+            background: blue;
+            width: 300px;
+            height: 250px;
+        }
+
+        .transition3 {
+            width: 100px;
+            height: 111px;
+            background: yellow;
+            transition: width 3s;
+        }
+
+        .transition3:hover {
+            background: greenyellow;
+            width: 500px;
+        }
+
+        .transition4 {
+            width: 100px;
+            height: 100px;
+            background: red;
+            transition: width 3s;
+            transition-delay: 2s;
+        }
+
+        .transition4:hover {
+            background: rgba(0, 0, 255, 0.404);
+            width: 500px;
+        }
+
+        .transition5 {
+            width: 100px;
+            height: 111px;
+            background: yellow;
+            transition: width 2s, height 2s, transform 2s;
+
+        }
+
+        .transition5:hover {
+            background: rgb(141, 179, 84);
+            width: 300px;
+            height: 300px;
+            transform: rotate(180deg);
+        }
+
+        .transition6 {
+            width: 100px;
+            height: 100px;
+            background: red;
+            transition-property: width;
+            transition-duration: 2s;
+            transition-timing-function: linear;
+            transition-delay: 1s;
+        }
+
+        .transition6:hover {
+            background: rgba(0, 0, 255, 0.404);
+            width: 200px;
+        }
+
+        .transition7 {
+            width: 100px;
+            height: 100px;
+            background: yellow;
+            transition: width 2s linear 1s;
+        }
+
+        .transition7:hover {
+            background: greenyellow;
+            width: 500px;
+
+        }
+
+        /* TRANSITION PRORERTY OF CSS  WITH 2D AND 3D EFFECT*/
+
+        .D-Effect {
+            /* position: relative; */
+            font-weight: bold;
+            font-size: 15px;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            padding: 10px;
+            background: red;
+            color: white;
+            border: 1px solid #000000;
+            margin-right: 50px;
+            border-radius: 5px;
+            float: left;
+
+            /* transition: width 3s,height 3s, transform 2s; */
+            /* transition: width 2s, height 2s, transform 2s; */
+            transition: width 10s, height 10s, transform 10s, border-radius 10s;
+
+        }
+
+        #rotateSimple:hover {
+            transform: rotate(180deg);
+            /* width: 50px;
+            height: 50px; */
+        }
+
+        #rotatex:hover {
+            transform: rotateX(180deg);
+            /* width: 100px;
+            height: 100px; */
+        }
+
+        #rotatey:hover {
+            transform: rotateY(360deg);
+            /* width: 100px;
+            height: 100px; */
+        }
+
+        #rotatecircle:hover {
+            transform: rotate(180deg);
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+    </style>
 </head>
 
 <body>
@@ -27,26 +176,32 @@
         Syntax : -
         background-image: linear-gradient(direction, color-stop1, color-stop2, ...);
     </p>
+
     <div style="background-image: linear-gradient(red, yellow); height: 100px;">
         background-image: linear-gradient(red, yellow); (direction top to bottom (Default))
     </div>
+
     <br><br>
     <div style="background-image: linear-gradient(to right ,red, yellow); height: 100px;">
         background-image: linear-gradient(to right, red, yellow); (to right, to bottom, to top, to left)
     </div>
+
     <br><br>
     <div style="background-image: linear-gradient(to top left, red, yellow);; height: 100px;">
         DIAGONAL : - background-image: linear-gradient(to top left, red, yellow); (to top left, to top right, to bottom
         left, to bottom right)
     </div>
+
     <br><br>
     <div style="background-image: linear-gradient(180deg, red, yellow);; height: 100px;">
         DEGREE : - background-image: linear-gradient(180deg, red, yellow);
     </div>
+
     <br><br>
     <div style="background-image: linear-gradient(to left, red, yellow,blue, green); height: 100px;">
         multiple color : - background-image: linear-gradient(to left, red, yellow,blue,green);
     </div>
+
     <br><br>
     <div style="background-image: repeating-linear-gradient(to left, red 5%, yellow 10%,green 15%); height: 100px;">
         REPEATING-LINEAR-GRADIENT COLOR : - background-image: repeating-linear-gradient(to left, red 5%, yellow
@@ -68,6 +223,8 @@
         height: 250px;
     </div>
 
+    <!-- CSS RADIAL GRADIENT -->
+
     <h1>CSS RADIAL GRADIENT</h1>
 
     <div style="background-image: radial-gradient(red, blue, black);  height: 200px;">
@@ -80,7 +237,7 @@
         background-image: radial-gradient(circle,red, yellow 10%, green 15%); height: 200px; || ellipse(default)
     </div> <br><br>
 
-
+    <!-- Closest-side/corner farthest-side/corner -->
     <div
         style="background-image: radial-gradient(farthest-side at 70% 50%,red, yellow 10%, green 20%);  height: 200px;">
         background-image: radial-gradient(farthest-side at 70% 50%,red, yellow 10%, green 15%); height: 200px; ||
@@ -101,7 +258,7 @@
         ellipse(default)
     </div>
 
-
+    <!-- conical gradient -->
     <h1>RADIAL REPEATING GRADIENTS</h1>
     <div style="background-image: repeating-radial-gradient(red, yellow 1%, green 5%);  height: 200px;">
         background-image: radial-gradient(red, yellow 1%, green 5%); height: 200px; || ellipse(default)
@@ -144,37 +301,169 @@
         </div>
 
     </div>
+
+    <!-- BOX_SHADOW -->
     <h1>Explain the box shadow</h1>
     <div style="display: flex; flex-wrap: wrap;">
-        <div style="box-shadow: 5px 5px;background-color: aliceblue; height:150px;  width:150px;margin: 10px;">
+        <div style="box-shadow: 5px 5px;background-color: aliceblue; height:140px;  width:140px;margin: 10px;">
             box-shadow: 5px 5px
         </div>
-        <div style="box-shadow: 5px 5px red;background-color: aliceblue; height:150px;  width:150px;margin: 10px;">
+        <div style="box-shadow: 5px 5px red;background-color: aliceblue; height:140px;  width:140px;margin: 10px;">
             box-shadow: 5px 5px red
         </div>
-        <div style="box-shadow: 5px 5px 5px red;background-color: aliceblue; height:150px;  width:150px;margin: 10px;">
+        <div style="box-shadow: 5px 5px 5px red;background-color: aliceblue; height:140px;  width:140px;margin: 10px;">
             box-shadow: 5px 5px 5px red
         </div>
         <div
-            style="box-shadow: 5px 5px 5px 5px red;background-color: aliceblue; height:150px;  width:150px;margin: 10px;">
+            style="box-shadow: 5px 5px 5px 5px red;background-color: aliceblue; height:140px;  width:140px;margin: 10px;">
             box-shadow: 5px 5px 5px 5px red
         </div>
         <div
-            style="box-shadow: 5px 5px 5px 5px red inset;background-color: aliceblue; height:150px;  width:150px;margin: 10px;">
+            style="box-shadow: 5px 5px 5px 5px red inset;background-color: aliceblue; height:140px;  width:140px;margin: 10px;">
             box-shadow: 5px 5px 5px 5px red inset
         </div>
         <div
-            style="box-shadow: -5px 5px 5px 5px red; background-color: aliceblue; height:150px;  width:150px;margin: 10px;">
+            style="box-shadow: -5px 5px 5px 5px red; background-color: aliceblue; height:140px;  width:140px;margin: 10px;">
             box-shadow: -5px 5px 5px 5px red;
         </div>
         <div
-            style="box-shadow: 5px -5px 5px 5px red; background-color: aliceblue; height:150px;  width:150px;margin: 10px;">
+            style="box-shadow: 5px -5px 5px 5px red; background-color: aliceblue; height:140px;  width:140px;margin: 10px;">
             box-shadow: 5px -5px 5px 5px red;
         </div>
         <div
-            style="box-shadow: -5px -5px 5px 5px red; background-color: aliceblue; height:150px;  width:150px;margin: 10px;">
+            style="box-shadow: -5px -5px 5px 5px red; background-color: aliceblue; height:140px;  width:140px;margin: 15px;">
             box-shadow: -5px -5px 5px 5px red;
         </div>
+    </div>
+
+    <!-- Transform property -->
+
+    <h1>TRANSFORMs</h1>
+    <p>
+        Here is a "transform" PROPERTY and following value : - <br>
+        rotate() <br>
+        translate(50px,100px) <br>
+        scale(2,3) (zoom)<br>
+        skew(20deg, 10deg) <br>
+        matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY()) <br>
+    </p>
+
+    <div style="margin :auto ;width: 70%;">
+        <h1>CSS 2D TRANSFORMS</h1>
+        <div style="margin:10px;height: 150px; width:150px;background-color: blue; transform: translate(50px,100px);">
+            transform: translate(50px,100px)
+        </div>
+        <div style="margin:10px;height: 150px; width:150px;background-color: blue; transform: translate(50px,100px);">
+            transform: translate(50px,100px)
+        </div>
+        <div style="height: 150px; width:150px;background-color: blue; transform: rotate(50deg);">
+            transform: rotate(50deg)
+        </div>
+        <div
+            style="height: 150px; width:150px;background-color: blue; transform: scale(2,2);display: flex; align-items: center; margin: 20px;">
+            transform: scale(2,2)
+        </div><br><br><br>
+
+        <div
+            style="height: 150px; width:150px;background-color: blue; transform: scaleX(2);display: flex; align-items: center;  margin: 20px;">
+            transform: scaleX(2);
+        </div>
+        <div
+            style="height: 150px; width:150px;background-color: blue; transform: skew(20deg);display: flex; align-items: center;  margin: 20px;">
+            transform: skew(20deg);
+        </div>
+        <div
+            style="height: 150px; width:150px;background-color: blue; transform: skewX(20deg);display: flex; align-items: center;  margin: 20px;">
+            transform: skewX(20deg);
+        </div>
+
+        <div
+            style="height: 150px; width:150px;background-color: blue; transform: skewY(20deg);display: flex; align-items: center;  margin: 20px;">
+            transform: skewY(20deg);
+        </div>
+
+        <div
+            style="height: 150px; width:150px;background-color: blue; transform: skew(20deg,20deg);display: flex; align-items: center;  margin: 20px;">
+            transform: skew(20deg,20deg);
+        </div>
+
+        <hr>
+        <h1>3D TRANSFORMs</h1>
+        <p>
+            Here is a "transform" PROPERTY and following value : - <br>
+            rotateX(150DEG) <br>
+            rotateY(150DEG) <br>
+            rotateZ(150DEG) <br>
+        </p>
+        <div
+            style="height: 150px; width:150px;background-color: blue; transform: rotateX(91deg);display: flex; align-items: center;  margin: 20px;">
+            transform: rotateX(90deg);
+        </div>
+        <div
+            style="height: 150px; width:150px;background-color: blue; transform: rotateY(91deg);display: flex; align-items: center;  margin: 20px;">
+            transform: rotateY(90deg);
+        </div>
+        <div
+            style="height: 150px; width:150px;background-color: blue; transform: rotateZ(90deg);display: flex; align-items: center;  margin: 20px;">
+            transform: rotateZ(90deg);
+        </div>
+        <hr>
+        <div
+            style="height: 150px; width:150px;background-color: blue; transform: rotateX(150deg);display: flex; align-items: center;  margin: 20px;">
+            transform: rotateX(150deg);
+        </div>
+        <div
+            style="height: 150px; width:150px;background-color: blue; transform: rotateY(150deg);display: flex; align-items: center;  margin: 20px;">
+            transform: rotateY(150deg);
+        </div>
+        <div
+            style="height: 150px; width:150px;background-color: blue; transform: rotateZ(150deg);display: flex; align-items: center;  margin: 20px;">
+            transform: rotateZ(150deg);
+        </div>
+    </div>
+    <hr>
+    <h1> CSS TRANSITION PROPERTY</h1>
+    <p>
+        CSS transitions allows you to change property values smoothly, over a given duration.<br><br>
+
+        transition : width 2s, height 2s, transform 2s<br><br>
+        transition-property : width; <br>
+        transition-duration : 2s; <br>
+        transition-delay : 2s;<br>
+        transition-timing-function : linear; (ease,ease-in,ease-out,ease-in-out;) <br>
+    </p>
+    <div style="display: flex;">
+        <div class="transition1">
+            transition: width 3s;
+        </div>
+        <div class="transition2">
+            transition: width 3s, height 2s;
+        </div>
+        <div class="transition3" style="transition-timing-function:linear;">
+            transition-timing-function:linear; (ease; ease-in; ease-out; ease-in-out;)
+        </div>
+        <div class="transition4">
+            transition: width 3s; <br>
+            transition-delay: 2s;
+        </div>
+        <div class="transition5">
+            transform: rotate(180deg);<br>
+            transition: width 2s, height 2s, transform 2s;
+        </div>
+        <div class="transition6">
+            transition-property: width;<br>
+            transition-duration: 2s;<br>
+            transition-timing-function: linear;<br>
+            transition-delay: 1s;
+        </div>
+        <div class="transition7">transition: width 2s linear 1s;</div>
+    </div>
+    <hr>
+    <div>
+        <div class="D-Effect" id="rotateSimple">2D rotate</div>
+        <div class="D-Effect" id="rotatex">3D rotate-X</div>
+        <div class="D-Effect" id="rotatey">3D rotate-Y</div>
+        <div class="D-Effect" id="rotatecircle">3D rotate-Y</div>
     </div>
 </body>
 

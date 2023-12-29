@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes/elements</title>
+    <style>
+        .pseudo:hover {
+            background-color: blueviolet;
+            text-align: center;
+            font-size: 30px;
+            color: white;
+        }
+
+        .child {
+            display: none;
+            background-color: brown;
+        }
+
+        .parrent:hover .child {
+            display: block;
+        }
+
+        .first-c span:first-child {
+            color: blue;
+        }
+
+        /* Pseudo-elements */
+        .pseudo-element p::first-line {
+            color: blue;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .pseudo-element p::before {
+            background-color: rgb(255, 171, 171);
+            font-family: Arial, Helvetica, sans-serif;
+            content:  url("cssImage/favicon.ico")  "  Hello ";
+        }
+        ::selection {color: red; background: yellow;}
+    </style>
+</head>
+
+<body style="font-size: 25px;">
+    <h1>Pseudo-classes/Pseoudo-elements</h1>
+    <p>
+        A pseudo-class is used to define a special state of an element. <br><br>
+        For example, : - <br>
+
+        &bull; Style an element when a user mouses over it. <br>
+        &bull; Style visited and unvisited links differently. <br>
+        &bull; Style an element when it gets focus. <br><br>
+        selector:pseudo-class { <br>
+        property: value;<br>
+        }
+    </p>
+    <div class="pseudo">
+        I am Pseudo-classes
+    </div>
+    <hr>
+    <div>
+        Hover the parrent elements show the choeld elements. <br>
+        <div style="background-color: rgba(103, 194, 194, 0.2); padding: 30px;">
+            &lt;div class="parrent"&gt; <br>
+            &nbsp; &nbsp; &lt;p class="child"&gt;HOVER ME&lt;/p&gt; <br>
+            &lt;/div&gt; <br><br>
+            .child{ <br>
+            &nbsp; &nbsp; display: none; <br>
+            &nbsp; &nbsp;background-color: brown; <br>
+            } <br>
+            .parrent:hover .child{ <br>
+            &nbsp; &nbsp; display: block; <br>
+            }
+
+        </div><br>
+        <div class="parrent">
+            HOVER ME
+            <p class="child">I am children</p>
+        </div>
+        <hr>
+        <!--
+             p:first-child {
+            color: blue;
+          } -->
+        <div style="background-color: rgba(103, 194, 194, 0.2); padding: 30px;">
+            &lt;div class="first"&gt; <br>
+            &nbsp; &nbsp; &lt;span&gt;span-1&lt;/span&gt; <br>
+            &nbsp; &nbsp; &lt;span&gt;span-2&lt;/span&gt; <br>
+            &nbsp; &nbsp; &lt;p&gt; <br>
+            &nbsp; &nbsp; &nbsp; &nbsp; &lt;span&gt;span-1&lt;/span&gt; <br>
+            &nbsp; &nbsp; &nbsp; &nbsp; &lt;span&gt;span-2&lt;/span&gt; <br>
+            &nbsp; &nbsp; &lt;/p&gt; <br>
+            &lt;/div&gt; <br> <br>
+            .first span:first-child { color: blue; } : - Target first span child. <br>
+            .first span:last-child { color: blue; } : - Target last span. <br>
+            .first input:checked { width:20px; height:20px; } <br>
+            .first input:enabled { background-color:red; } <br>
+            .first input:disabled { background-color:blue; } <br>
+            .first p:empty width: 100px;height: 20px;background: green;<br>
+            .first p:nth-last-child(2) {background: red;} <br>
+            .first p:last-of-type {background: red;} <br>
+            .first p:first-of-type {background: red;} <br>
+            .first p:nth-last-of-type(1) {background: red;} <br>
+            :nth-child(3) {background: red;} <br>
+            :not(p) {color: #ff0000;}<br>
+            input:invalid {border: 2px solid red;} <br>
+            input:focus {background-color: yellow;} <br>
+            :root {background-color: blue;} <br>
+        </div>
+        <div class="first-c">
+            <span>span-1</span>
+            <span>span-2</span>
+            <p>
+                <span>span-1</span>
+                <span>span-2</span>
+            </p>
+        </div>
+        <h1>Pseudo-elements</h1>
+        <p>
+            A CSS pseudo-element is used to style specified parts of an element. <br><br>
+
+            Example : - <br><br>
+
+            Style the first letter, or line, of an element <br>
+            Insert content before, or after, the content of an element <br> <br>
+
+            selector::pseudo-element { <br>
+            property: value;<br>
+            }
+        </p>
+        <div style="background-color: rgba(103, 194, 194, 0.2); padding: 30px;">
+            &lt;div class="first"&gt; <br>
+            &nbsp; &nbsp; &lt;p&gt; <br>
+            &nbsp; &nbsp; &nbsp; &nbsp; Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium dicta quia
+            voluptates maxime ducimus id vero nihil quod amet illo. <br>
+            &nbsp; &nbsp; &lt;/p&gt; <br>
+            &lt;/div&gt; <br> <br>
+            .first p::first-line { color: blue; } : - Target first line only. <br>
+            .first p::first-letter { color: blue; } : - Target first letter only. <br>
+            .first p::before { content: "I AM "; } : - add content starting of p element. <br>
+            .first p::after { content: "I AM "; } : - add content end of p element. <br>
+            .first p::after { content: url("img path"); } : - add content end of p element. <br>
+            ::marker { content: url("img path"); } : -apply on ul ol on whole web page. <br>
+            ::selection {color: red; background: yellow;} : - select the content then apply effect. <br>
+        </div>
+        <div class="pseudo-element">
+            <p >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quas, provident iusto dolorum molestias
+                fugiat sunt facere placeat expedita quos. Similique maiores error deserunt molestias repellendus earum
+                sint non ducimus!
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -4,12 +4,13 @@
 <head>
     <style>
         body {
+            font-size: 30px;
             counter-reset: section;
         }
 
         h2::before {
             counter-increment: section;
-            content: "Section-"counter(section) ": ";
+            content: "Section-" counter(section) ": ";
         }
 
         ul {
@@ -21,7 +22,8 @@
             counter-increment: count;
             content: counters(count, ".") " ";
         }
-        div{
+
+        div {
             border: 2px solid red;
             padding: 20px;
             margin: 20px;
@@ -30,9 +32,74 @@
 </head>
 
 <body>
-    <div >
+    <div>
 
         <h1>Using CSS Counters</h1>
+
+        <p style="background-color: rgba(103, 194, 194, 0.2); padding: 30px;">
+
+            body { <br>
+            counter-reset: section; <br>
+            } <br>
+
+            h2::before { <br>
+            counter-increment: section; <br>
+            content: "Section-" counter(section) ": "; <br>
+            } <br> <br>
+
+            ul { <br>
+            counter-reset: count; <br>
+            list-style-type: none; <br>
+            } <br>
+
+            li::before { <br>
+            counter-increment: count; <br>
+            content: counters(count, ".") " "; <br>
+            } <br>
+
+            div { <br>
+            border: 2px solid red; <br>
+            padding: 20px; <br>
+            margin: 20px; <br>
+            } <br><br><br>
+
+
+            &lt;div &gt; <br>
+            &nbsp; &nbsp; &lt;h2&gt;HTML Tutorial&lt;/h2&gt; <br>
+            &nbsp; &nbsp; &lt;h2&gt;CSS Tutorial&lt;/h2&gt; <br>
+            &nbsp; &nbsp; &lt;h2&gt;JavaScript Tutorial&lt;/h2&gt; <br>
+            &nbsp; &nbsp; &lt;h2&gt;Python Tutorial&lt;/h2&gt; <br>
+            &nbsp; &nbsp; &lt;h2&gt;SQL Tutorial&lt;/h2&gt; <br>
+            &lt;/div&gt; <br><br>
+
+
+
+            &lt;ul&gt; <br>
+            &nbsp; &nbsp; &lt;li&gt;item&lt;/li&gt; <br>
+            &nbsp; &nbsp; &lt;li&gt;item <br>
+            &nbsp; &nbsp; &nbsp; &nbsp; &lt;ul&gt; <br>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;li&gt;item&lt;/li&gt; <br>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;li&gt;item&lt;/li&gt; <br>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;li&gt;item <br>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;ul&gt; <br>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;li&gt;item&lt;/li&gt; <br>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;li&gt;item&lt;/li&gt; <br>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;li&gt;item&lt;/li&gt; <br>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/ul&gt; <br>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/li&gt; <br>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;li&gt;item&lt;/li&gt; <br>
+            &nbsp; &nbsp; &nbsp; &nbsp; &lt;/ul&gt; <br>
+            &nbsp; &nbsp; &lt;/li&gt; <br>
+            &nbsp; &nbsp; &lt;li&gt;item&lt;/li&gt; <br>
+            &nbsp; &nbsp; &lt;li&gt;item&lt;/li&gt; <br>
+            &lt;/ul&gt; <br>
+
+            &lt;ul&gt; <br>
+            &nbsp; &nbsp; &lt;li&gt;item&lt;/li&gt; <br>
+            &nbsp; &nbsp; &lt;li&gt;item&lt;/li&gt; <br>
+            &lt;/ul&gt; <br>
+
+        </p><br>
 
         <h2>HTML Tutorial</h2>
         <h2>CSS Tutorial</h2>

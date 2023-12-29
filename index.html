@@ -36,6 +36,8 @@
                 <li class="res"><a href="#font">Font</a></li>
                 <li class="res"><a href="#float1">Float</a></li>
                 <li class="res"><a href="#display">Display</a></li>
+                <li class="res"><a href="#drop">Dropdown</a></li>
+                <li class="res" ><a target="_blank" href="advcss.html">ADV-CSS</a></li>
             </ul>
         </div>
         <div class="div2" id="up">
@@ -333,12 +335,30 @@
             <dd>overflow-x : - scroll , visible , hidden ,auto </dd>
             <dd>overflow-y : - scroll , visible , hidden ,auto </dd>
             <dd>overflow-wrap: normal , break-word , anywhere </dd>
-            <!-- <dd>text-overflow: clip; ellipsis(...) </dd> -->
-            <!-- <span style="text-overflow: clip; width: 50px;height: 10px; border:2px solid red; display:inline-block">Lorem ipsum dolor sit amet consectetur! Deleniti?</span> -->
-            <!-- <span style="text-overflow: ellipsis; width: 50px;height: 10px; border:2px solid red; display:inline-block">Lorem ipsum dolor sit amet consectetur! Deleniti?</span> -->
+            <dd>text-overflow: clip; ellipsis(...) </dd>
+            <span
+                style="white-space: nowrap; overflow: hidden; text-overflow: clip; width: 150px; border:2px solid red; display:inline-block;">
+                white-space: nowrap; overflow: hidden; text-overflow: clip; width: 150px; border:2px solid red;
+                display:inline-block;
+            </span>
+            <span
+                style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; width: 150px; border:2px solid red; display:inline-block">
+                white-space: nowrap; overflow: hidden; text-overflow: ellipsis; width: 150px; border:2px solid red;
+                display:inline-block;
+            </span>
+            <p>
+                span{<br>
+                white-space: nowrap; <br> overflow: hidden;<br>  text-overflow: ellipsis;<br>  width: 150px;<br>  border:2px solid red;<br> 
+                display:inline-block;
+                }
+            </p>
+
             <dd> white-space: nowrap; </dd>
             <dd> word-wrap: break-word, keep-all,break-all;</dd>
-            <!-- <dd> writing-mode: horizontal-tb; (vertical-rl)</dd> -->
+            <dd> writing-mode: horizontal-tb; (vertical-rl)</dd>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur <span style="writing-mode: vertical-rl;">adipisicing elit.</span> Eveniet, consequuntur.
+            </p>
             <p style="width:50%;height:100px; border:2px solid red;padding: 10px; overflow: auto; ">Lorem ipsum
                 dolor sit, amet consectetur adipisicing elit. Fugit, minus voluptatem. Cupiditate voluptate ullam
                 magni eveniet aliquid quo numquam, esse maxime commodi nisi corporis temporibus reprehenderit quas
@@ -924,7 +944,7 @@
             </ul>
         </div>
         <!-- CREATE DROPDOWN BUTTON  -->
-        <h1>Dropdown</h1>
+        <h1 id="drop">Dropdown</h1>
 
         <div>
 
@@ -1073,6 +1093,7 @@
         <!-- CSS MATH FUNCTION -->
         <h1><a href="mathfunc.html" target="_blank"> MATH FUNCTION</a></h1>
         <h1><a href="counterfunction.html" target="_blank"> COUNTER FUNCTION</a></h1>
+        <h1><a href="pseudo.html" target="_blank"> Pseudo-classes & Pseoudo-elements</a></h1>
 
         <div>
             importance of any css property : - p { color : red !important; }
