@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../cssImage/favicon.ico" type="image/x-icon">
+
     <title>Advanced css</title>
     <style>
         /* Transition properties */
@@ -177,24 +179,24 @@
         background-image: linear-gradient(direction, color-stop1, color-stop2, ...);
     </p>
 
-    <div style="background-image: linear-gradient(red, yellow); height: 100px;">
-        background-image: linear-gradient(red, yellow); (direction top to bottom (Default))
+    <div style="background-image: linear-gradient(green, blue); height: 100px;">
+        background-image: linear-gradient(green, blue); (direction top to bottom (Default))
     </div>
 
     <br><br>
-    <div style="background-image: linear-gradient(to right ,red, yellow); height: 100px;">
-        background-image: linear-gradient(to right, red, yellow); (to right, to bottom, to top, to left)
+    <div style="background-image: linear-gradient(to right ,green, blue); height: 100px;">
+        background-image: linear-gradient(to right, green, blue); (to right, to bottom, to top, to left)
     </div>
 
     <br><br>
-    <div style="background-image: linear-gradient(to top left, red, yellow);; height: 100px;">
-        DIAGONAL : - background-image: linear-gradient(to top left, red, yellow); (to top left, to top right, to bottom
+    <div style="background-image: linear-gradient(to top right,green, blue);; height: 100px;">
+        DIAGONAL : - background-image: linear-gradient(to top right, green, blue); (to top left, to top right, to bottom
         left, to bottom right)
     </div>
 
     <br><br>
-    <div style="background-image: linear-gradient(180deg, red, yellow);; height: 100px;">
-        DEGREE : - background-image: linear-gradient(180deg, red, yellow);
+    <div style="background-image: linear-gradient(45deg, red, yellow);; height: 100px;">
+        DEGREE : - background-image: linear-gradient(45deg, red, yellow);
     </div>
 
     <br><br>
@@ -341,27 +343,33 @@
     <h1>TRANSFORMs</h1>
     <p>
         Here is a "transform" PROPERTY and following value : - <br>
-        rotate() <br>
         translate(50px,100px) <br>
         scale(2,3) (zoom)<br>
         skew(20deg, 10deg) <br>
+        rotate(45deg) (use in 3D)<br>
         matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY()) <br>
     </p>
-
     <div style="margin :auto ;width: 70%;">
         <h1>CSS 2D TRANSFORMS</h1>
-        <div style="margin:10px;height: 150px; width:150px;background-color: blue; transform: translate(50px,100px);">
-            transform: translate(50px,100px)
+        <!-- Tansform -->
+        <div style="margin:10px;height: 150px; width:150px;background-color: blue; transform: translate(200px,20px);">
+            transform: translate(200px,20px)
         </div>
-        <div style="margin:10px;height: 150px; width:150px;background-color: blue; transform: translate(50px,100px);">
-            transform: translate(50px,100px)
+        <div style="margin:10px;height: 150px; width:150px;background-color: blue; transform: translateY(20px);">
+            transform: translateY(50px)
         </div>
-        <div style="height: 150px; width:150px;background-color: blue; transform: rotate(50deg);">
-            transform: rotate(50deg)
+        <div style="margin:10px;height: 150px; width:150px;background-color: blue; transform: translateX(200px);">
+            transform: translateX(200px)
         </div>
+
+        <!-- rotate -->
+        <!-- <div style="height: 150px; width:150px;background-color: blue; transform: rotate(45deg);">
+            transform: rotate(45deg)
+        </div> -->
+        <!-- scale(2,2) scaleX() | scaleY() -->
         <div
-            style="height: 150px; width:150px;background-color: blue; transform: scale(2,2);display: flex; align-items: center; margin: 20px;">
-            transform: scale(2,2)
+            style="height: 150px; width:150px;background-color: blue; transform: scale(2,0.5);display: flex; align-items: center; margin: 20px;">
+            transform: scale(2, 0.5)
         </div><br><br><br>
 
         <div
@@ -369,8 +377,14 @@
             transform: scaleX(2);
         </div>
         <div
-            style="height: 150px; width:150px;background-color: blue; transform: skew(20deg);display: flex; align-items: center;  margin: 20px;">
-            transform: skew(20deg);
+        style="height: 150px; width:150px;background-color: blue; transform: scaleY(0.5);display: flex; align-items: center;  margin: 20px;">
+        transform: scaleY(0.5);
+    </div>
+
+        <!-- skew(2,2) skewX() | skewY() -->
+        <div
+            style="height: 150px; width:150px;background-color: blue; transform: skew(30deg,10deg);display: flex; align-items: center;  margin: 20px;">
+            transform: skew(30deg, 10deg);
         </div>
         <div
             style="height: 150px; width:150px;background-color: blue; transform: skewX(20deg);display: flex; align-items: center;  margin: 20px;">
@@ -380,11 +394,6 @@
         <div
             style="height: 150px; width:150px;background-color: blue; transform: skewY(20deg);display: flex; align-items: center;  margin: 20px;">
             transform: skewY(20deg);
-        </div>
-
-        <div
-            style="height: 150px; width:150px;background-color: blue; transform: skew(20deg,20deg);display: flex; align-items: center;  margin: 20px;">
-            transform: skew(20deg,20deg);
         </div>
 
         <hr>
@@ -397,11 +406,11 @@
         </p>
         <div
             style="height: 150px; width:150px;background-color: blue; transform: rotateX(91deg);display: flex; align-items: center;  margin: 20px;">
-            transform: rotateX(90deg);
+            transform: rotateX(91deg);
         </div>
         <div
             style="height: 150px; width:150px;background-color: blue; transform: rotateY(91deg);display: flex; align-items: center;  margin: 20px;">
-            transform: rotateY(90deg);
+            transform: rotateY(91deg);
         </div>
         <div
             style="height: 150px; width:150px;background-color: blue; transform: rotateZ(90deg);display: flex; align-items: center;  margin: 20px;">
@@ -421,6 +430,9 @@
             transform: rotateZ(150deg);
         </div>
     </div>
+    <hr>
+    <hr>
+
     <hr>
     <h1> CSS TRANSITION PROPERTY</h1>
     <p>

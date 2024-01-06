@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../cssImage/favicon.ico" type="image/x-icon">
     <title>Dropdown menu</title>
     <style>
         /* Dropdown inside navbar */
@@ -20,7 +21,7 @@
             float: left;
         }
 
-        .drop-nav li>a,
+        .drop-nav li >a,
         .dropbtn-1 {
             display: block;
             color: white;
@@ -29,10 +30,7 @@
             text-decoration: none;
         }
 
-        .drop-nav li a:hover,
-        .dropdown-1:hover .dropbtn {
-            background-color: red;
-        }
+
 
         .drop-nav .dropdown-1-content {
 
@@ -53,11 +51,16 @@
             text-align: left;
         }
 
+         .drop-nav li> a:hover,
+        .dropdown-1:hover .dropbtn {
+            background-color: red;
+        }
+
         .dropdown-1-content a:hover {
             background-color: #f1c0c0;
         }
 
-        .dropdown-1:hover .dropdown-1-content {
+       .dropdown-1:hover .dropdown-1-content {
             display: block;
         }
     </style>
@@ -69,6 +72,8 @@
     <div>
 
         <h3>Dropdown Menu inside a Navigation Bar</h3>
+
+
         <ul class="drop-nav">
             <li><a href="#home">Home</a></li>
             <li><a href="#news">News</a></li>

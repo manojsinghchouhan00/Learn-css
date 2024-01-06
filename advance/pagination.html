@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../cssImage/favicon.ico" type="image/x-icon">
+    <title>Document</title>
+    <style>
+        .pagination-1 {
+            display: inline-block;
+        }
+
+        .pagination-1 a {
+            color: black;
+            float: left;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+
+        /* P-2 */
+        .pagination-2 {
+            display: inline-block;
+        }
+
+        .pagination-2 a {
+            color: black;
+            float: left;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+
+        .pagination-2 a.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .pagination-2 a:hover:not(.active) {
+            background-color: #ddd;
+        }
+
+        /* p-3 */
+        .pagination-3 {
+            display: inline-block;
+        }
+
+        .pagination-3 a {
+            color: black;
+            float: left;
+            padding: 8px 16px;
+            text-decoration: none;
+            transition: background-color .3s;
+            border: 1px solid #ddd;
+        }
+
+        .pagination-3 a.active {
+            background-color: #4CAF50;
+            color: white;
+            border: 1px solid #4CAF50;
+        }
+
+        .pagination-3 a:hover:not(.active) {
+            background-color: #ddd;
+        }
+
+        /* p-4 */
+        .pagination-4 {
+            display: inline-block;
+        }
+
+        .pagination-4 a {
+            color: black;
+            float: left;
+            padding: 8px 16px;
+            text-decoration: none;
+            transition: background-color .3s;
+            border: 1px solid #ddd;
+            margin: 0 4px;
+        }
+
+        .pagination-4 a.active {
+            background-color: #4CAF50;
+            color: white;
+            border: 1px solid #4CAF50;
+        }
+
+        .pagination-4 a:hover:not(.active) {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+
+<body align="center">
+
+    <h2>Pagination</h2>
+
+    <div class="pagination-1">
+        <a href="#">&laquo;</a>
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">&raquo;</a>
+    </div>
+    <hr>
+    <div class="pagination-2">
+        <a href="#">&laquo;</a>
+        <a href="#">1</a>
+        <a class="active" href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">&raquo;</a>
+    </div>
+    <hr>
+    <div class="pagination-3">
+        <a href="#">&laquo;</a>
+        <a href="#">1</a>
+        <a href="#" class="active">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">&raquo;</a>
+    </div>
+    <hr>
+    <div class="pagination-4">
+        <a href="#">&laquo;</a>
+        <a href="#">1</a>
+        <a href="#" class="active">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">&raquo;</a>
+    </div>
+
+</body>
+
+</html>

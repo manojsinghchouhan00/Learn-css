@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TOOLTIPS</title>
+
+  <style>
+    .tooltip {
+      position: relative;
+      display: inline-block;
+      border-bottom: 1px dotted black;
+    }
+
+    .tooltip .tooltiptext {
+      visibility: hidden;
+      width: 120px;
+      background-color: black;
+      color: #fff;
+      text-align: center;
+      border-radius: 6px;
+      padding: 5px 0;
+      position: absolute;
+      z-index: 1;
+      margin-left: -60px;
+      /* top */
+      bottom: 150%;
+      left: 50%;
+
+      /* bottom */
+      /* top: 150%;
+      left: 50%; */
+
+      /* right */
+      /* top: -5px;
+      left: 170%; */
+
+      /* left */
+      /* top: -5px;
+      left: -70%; */
+
+
+      /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+      opacity: 0;
+      transition: opacity 10s;
+    }
+
+    .tooltip .tooltiptext::after {
+      content: "";
+      position: absolute;
+
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      /* top */
+      border-color: black transparent transparent transparent;
+      top: 100%;
+      left: 50%;
+
+      /* bottom */
+      /* border-color: transparent transparent black transparent;
+      bottom: 100%;
+      left: 50%; */
+
+      /* right */
+      /* border-color: transparent black transparent transparent;
+      top: 40%;
+      right: 100%; */
+
+      /* left */
+      /* border-color: transparent transparent transparent black;
+      top: 33%;
+      left: 104%; */
+    }
+
+    .tooltip:hover .tooltiptext {
+      visibility: visible;
+
+      opacity: 1;
+    }
+  </style>
+
+<body style="text-align:center;">
+
+  <h2>Top Tooltip w/ Bottom Arrow</h2>
+
+  <div class="tooltip">Hover over me
+    <span class="tooltiptext">Tooltip text</span>
+  </div>
+
+</body>
+
+</html>

@@ -4,43 +4,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>combinator</title>
+    <title>Document</title>
     <style>
-         div {
-            background-color: rgba(45, 45, 139, 0.555);
-            /* opacity: 0.5; */
+        div {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation-name: myname;
+            animation-duration: 10s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            /* animation-direction: alternate-reverse; */
+            animation-fill-mode: both;
         }
-        /* div p{
-            background-color: rgb(136, 136, 156);
-        } */
-        /* div>p{
-            background-color: blue;
-        } */
-        
-         /* div+p{
-            background-color: blue;
-        } */
-        /* div~p{
-            background-color: blue;
-        } */
+
+        @keyframes myname {
+            0% {
+                background-color: aqua;
+                left: 0;
+                top: 0;
+                transform : rotate(0deg);
+            }
+            5% {
+                background-color: aqua;
+                left: 0;
+                top: 0;
+                transform : rotate(50deg);
+            }
+            10% {
+                background-color: aqua;
+                left: 0;
+                top: 0;
+                transform : rotate(0deg);
+            }
+
+            25% {
+                background-color: red;
+                left: 800px;
+                top: 0;
+            }
+
+            50% {
+                background-color: green;
+                left: 800px;
+                top: 500px;
+            }
+
+            75% {
+                background-color: brown;
+                left: 250px;
+                top: 500px;
+            }
+
+            100% {
+                background-color: blue;
+                left: 0;
+                top: 0;
+            }
+        }
     </style>
 </head>
 
 <body>
-    <h1>CSS combinators</h1>
-    <div>
-        <p>paragraph-1</p>
-        <p>paragraph-2</p>
-        <p>paragraph-3</p>
-        <span>
-            <p>paragraph-4</p>
-        </span>
-        <p>paragraph-5</p>
-        <p>paragraph-6</p>
-    </div>
-    <p>paragraph-7</p>
-    <p>paragraph-8</p>
-    <p>paragraph-9</p>
+    <div>Animation</div>
 </body>
 
 </html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../cssImage/favicon.ico" type="image/x-icon">
+    <title>Animation by css</title>
+<!-- Animation css file -->
+    <link rel="stylesheet" href="animation.css">
+</head>
+
+<body>
+    <div>
+        <h1>Animation</h1>
+        <div class="first">
+            CSS
+        </div>
+        <div style="font-size: 25px;">
+            An animation lets an element gradually change from one style to another.
+
+            You can change as many CSS properties you want, as many times as you want. <br>
+            &bull; @keyframes enimationName{ } <br>
+            &bull; animation-name : enimationName ; <br>
+            &bull; animation-duration : 4s ;<br>
+            &bull; animation-delay : 2s ; <br>
+            &bull; animation-iteration-count : 2; (4, infinite)  <br>
+            &bull; animation-direction : reverse;(normal,reverse,alternate,alternate-reverse)<br>
+            &bull; animation-timing-function : linear;(linear, ease, ease-in, ease-out, ease-in-out;)  <br>
+            &bull; animation-fill-mode : forwards ; (backwards, both, none)<br>
+            &bull; animation <br>
+        </div>
+        <div style="display: flex;flex-wrap: wrap;">
+            <div class="simple-div second"></div>
+            <div class="simple-div third"></div>
+            <div class="simple-div fourth"></div>
+        </div>
+        <div style="display: flex;flex-wrap: wrap;">
+            <div class="simple-div fifth">animation-delay :2s</div>
+            <div class="simple-div sixth">animation-delay :2s</div>
+            <div class="simple-div seventh">animation-iteration-count: 3;(infinite)</div>
+            <div class="simple-div eighth">animation-direction: reverse;(normal,reverse,alternate,alternate-reverse)
+            </div>
+        </div>
+        <div>
+            animation-timing-function: linear;(linear, ease, ease-in, ease-out, ease-in-out;) <br>
+            animation-fill-mode: forwards;(forwards, backwards, both, none)
+            <div class="simple-div tenght">animation-delay :2s</div>
+            <div class="simple-div tenght" id="div1">linear</div>
+            <div class="simple-div tenght" id="div2">ease</div>
+            <div class="simple-div tenght" id="div3">ease-in</div>
+            <div class="simple-div tenght" id="div4">ease-out</div>
+            <div class="simple-div tenght" id="div5">ease-in-out</div>
+        </div>
+        <div>
+            short hand
+            <div class="simple-div elevanth" id="div5"></div>
+            <div class="simple-div twelth" id="div5"></div>
+
+        </div>
+    </div>
+</body>
+
+</html>

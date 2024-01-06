@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+
+</head>
+
+<body>
+    <!-- Transform property -->
+
+    <h1>TRANSFORMs</h1>
+    <p>
+        Here is a "transform" PROPERTY and following value : - <br>
+        translate(50px,100px) <br>
+        rotate() <br>
+        scale(2,3) (zoom)<br>
+        skew(20deg, 10deg) <br>
+        matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY()) <br>
+    </p>
+
+    <div style="margin :auto ;width: 70%;">
+        <h1>CSS 2D TRANSFORMS</h1>
+        <!-- Tansform -->
+        <div style="margin:10px;height: 150px; width:150px;background-color: blue; transform: translate(200px,20px);">
+            transform: translate(200px,20px)
+        </div>
+
+        <!-- rotate -->
+        <div style="height: 150px; width:150px;background-color: blue; transform: rotate(45deg);">
+            transform: rotate(45deg)
+        </div>
+
+        <!-- scale(2,2) scaleX() | scaleY() -->
+        <div
+            style="height: 150px; width:150px;background-color: blue; transform: scale(2,0.5);display: flex; align-items: center; margin: 20px;">
+            transform: scale(2, 0.5)
+        </div><br><br><br>
+
+        <div
+            style="height: 150px; width:150px;background-color: blue; transform: scaleX(2);display: flex; align-items: center;  margin: 20px;">
+            transform: scaleX(2);
+        </div>
+
+        <!-- skew(2,2) skewX() | skewY() -->
+        <div
+            style="height: 150px; width:150px;background-color: blue; transform: skew(30deg,10deg);display: flex; align-items: center;  margin: 20px;">
+            transform: skew(30deg, 10deg);
+        </div>
+        <div
+            style="height: 150px; width:150px;background-color: blue; transform: skewX(20deg);display: flex; align-items: center;  margin: 20px;">
+            transform: skewX(20deg);
+        </div>
+
+        <div
+            style="height: 150px; width:150px;background-color: blue; transform: skewY(20deg);display: flex; align-items: center;  margin: 20px;">
+            transform: skewY(20deg);
+        </div>
+
+        <!-- <div
+            style="height: 150px; width:150px;background-color: blue; transform: skew(20deg,20deg);display: flex; align-items: center;  margin: 20px;">
+            transform: skew(20deg,20deg);
+        </div> -->
+
+        <hr>
+        <h1>3D TRANSFORMs</h1>
+        <p>
+            Here is a "transform" PROPERTY and following value : - <br>
+            rotateX(150DEG) <br>
+            rotateY(150DEG) <br>
+            rotateZ(150DEG) <br>
+        </p>
+        <div
+            style="height: 150px; width:150px;background-color: blue; transform: rotateX(91deg);display: flex; align-items: center;  margin: 20px;">
+            transform: rotateX(90deg);
+        </div>
+        <div
+            style="height: 150px; width:150px;background-color: blue; transform: rotateY(91deg);display: flex; align-items: center;  margin: 20px;">
+            transform: rotateY(90deg);
+        </div>
+        <div
+            style="height: 150px; width:150px;background-color: blue; transform: rotateZ(90deg);display: flex; align-items: center;  margin: 20px;">
+            transform: rotateZ(90deg);
+        </div>
+        <hr>
+        <div
+            style="height: 150px; width:150px;background-color: blue; transform: rotateX(150deg);display: flex; align-items: center;  margin: 20px;">
+            transform: rotateX(150deg);
+        </div>
+        <div
+            style="height: 150px; width:150px;background-color: blue; transform: rotateY(150deg);display: flex; align-items: center;  margin: 20px;">
+            transform: rotateY(150deg);
+        </div>
+        <div
+            style="height: 150px; width:150px;background-color: blue; transform: rotateZ(150deg);display: flex; align-items: center;  margin: 20px;">
+            transform: rotateZ(150deg);
+        </div>
+    </div>
+</body>
+
+</html>

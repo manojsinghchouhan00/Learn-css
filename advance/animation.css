@@ -1,0 +1,414 @@
+.first {
+    width: 70px;
+    height: 30px;
+    background: #92B901;
+    color: #ffffff;
+    position: relative;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+    animation: first-div 20s 1;
+    border-radius: 5px;
+    /* -moz-animation: animated_div 5s 1;
+    -webkit-animation: animated_div 5s 1;
+    -o-animation: animated_div 5s 1;
+    -webkit-border-radius: 5px; */
+}
+
+@keyframes first-div {
+    0% {
+        transform: rotate(0deg);
+        left: 0px;
+    }
+
+    25% {
+        transform: rotate(20deg);
+        left: 0px;
+    }
+
+    50% {
+        transform: rotate(0deg);
+        left: 500px;
+    }
+
+    55% {
+        transform: rotate(0deg);
+        left: 500px;
+    }
+
+    70% {
+        transform: rotate(0deg);
+        left: 500px;
+        background: #2909b6;
+    }
+
+    100% {
+        transform: rotate(-360deg);
+        left: 0px;
+    }
+}
+
+/* Simple  */
+.simple-div {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background-color: black;
+    color: #fff;
+}
+
+.second {
+    animation-name: second;
+    animation-duration: 4s;
+}
+
+@keyframes second {
+    from {
+        background-color: green;
+
+    }
+    to {
+        background-color: blue;
+    }
+}
+
+/* 3 third */
+.third {
+    animation-name: three;
+    animation-duration: 4s;
+}
+
+@keyframes three {
+    0% {
+        background-color: green;
+    }
+
+    25% {
+        background-color: yellow;
+    }
+
+    50% {
+        background-color: blue;
+    }
+
+    100% {
+        background-color: orange;
+    }
+}
+
+.fourth {
+    position: relative;
+    animation-name: four;
+    animation-duration: 4s;
+}
+
+@keyframes four {
+    0% {
+        background-color: red;
+        right: 0px;
+        top: 0px;
+    }
+
+    25% {
+        background-color: yellow;
+        right: 200px;
+        top: 0px;
+    }
+
+    50% {
+        background-color: blue;
+        right: 200px;
+        top: 200px;
+    }
+
+    75% {
+        background-color: green;
+        right: 0px;
+        top: 200px;
+    }
+
+    100% {
+        background-color: red;
+        right: 0px;
+        top: 0px;
+    }
+}
+
+/* 5 five */
+.fifth {
+    position: relative;
+    animation-name: five;
+    animation-duration: 4s;
+    animation-delay: 2s;
+}
+
+@keyframes five {
+    0% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+        background-color: yellow;
+        left: 200px;
+        top: 0px;
+    }
+
+    50% {
+        background-color: blue;
+        left: 200px;
+        top: 200px;
+    }
+
+    75% {
+        background-color: green;
+        left: 0px;
+        top: 200px;
+    }
+
+    100% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+}
+
+/* 5 five */
+.sixth {
+    position: relative;
+    animation-name: six;
+    animation-duration: 4s;
+    animation-delay: -2s;
+}
+
+@keyframes six {
+    0% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+        
+    }
+
+    25% {
+        background-color: yellow;
+        left: 200px;
+        top: 0px;
+    }
+
+    50% {
+        background-color: blue;
+        left: 200px;
+        top: 200px;
+    }
+
+    75% {
+        background-color: green;
+        left: 0px;
+        top: 200px;
+    }
+
+    100% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+}
+
+/* & seven */
+.seventh {
+    position: relative;
+    animation-name: seven;
+    animation-duration: 4s;
+    animation-iteration-count: 3;
+}
+
+@keyframes seven {
+    0% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+        background-color: yellow;
+        left: 200px;
+        top: 0px;
+    }
+
+    50% {
+        background-color: blue;
+        left: 200px;
+        top: 200px;
+    }
+
+    75% {
+        background-color: green;
+        left: 0px;
+        top: 200px;
+    }
+
+    100% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+}
+
+/* eight - 8 */
+.eighth {
+    position: relative;
+    animation-name: eight;
+    animation-duration: 4s;
+    animation-direction: reverse;
+}
+
+@keyframes eight {
+    0% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+        background-color: yellow;
+        left: 200px;
+        top: 0px;
+    }
+
+    50% {
+        background-color: blue;
+        left: 200px;
+        top: 200px;
+    }
+
+    75% {
+        background-color: green;
+        left: 0px;
+        top: 200px;
+    }
+
+    100% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+}
+
+/* 10-TEN */
+.tenght {
+    position: relative;
+    animation: ten 5s;
+    animation-fill-mode: forwards;
+}
+
+#div1 {
+    animation-timing-function: linear;
+}
+
+#div2 {
+    animation-timing-function: ease;
+}
+
+#div3 {
+    animation-timing-function: ease-in;
+}
+
+#div4 {
+    animation-timing-function: ease-out;
+}
+
+#div5 {
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes ten {
+    from {
+        left: 0px;
+    }
+
+    to {
+        left: 600px;
+    }
+}
+
+/* Ellevan-11 */
+.elevanth {
+    position: relative;
+    animation-name: elevan;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes elevan {
+    0% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+        background-color: yellow;
+        left: 200px;
+        top: 0px;
+    }
+
+    50% {
+        background-color: blue;
+        left: 200px;
+        top: 200px;
+    }
+
+    75% {
+        background-color: green;
+        left: 0px;
+        top: 200px;
+    }
+
+    100% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+}
+
+/* 12 twelve */
+.twelth {
+    position: relative;
+    animation: twelve 5s linear 2s infinite alternate;
+}
+
+@keyframes twelve {
+    0% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+        background-color: yellow;
+        left: 200px;
+        top: 0px;
+    }
+
+    50% {
+        background-color: blue;
+        left: 200px;
+        top: 200px;
+    }
+
+    75% {
+        background-color: green;
+        left: 0px;
+        top: 200px;
+    }
+
+    100% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+}

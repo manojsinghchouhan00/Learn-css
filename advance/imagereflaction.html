@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../cssImage/favicon.ico" type="image/x-icon">
+    <title>Image reflection</title>
+    <style>
+        .image-1 {
+            width: 150px;
+            margin: 250px;
+            -webkit-box-reflect: above 20px;
+        }
+
+        .image-2 {
+            width: 300px;
+            height: 200px;
+        }
+
+        .image-3 {
+            width: 300px;
+            height: 200px;
+            object-fit: contain;
+            object-position: 5px 10px;
+            border: 5px solid red;
+        }
+
+        /* Now masking not applying */
+        /* .mask-1 {
+            size: 20px;
+            -webkit-mask-image: url("../cssImage/favicon.ico");
+            mask-image: url("../cssImage/favicon.ico");
+            -webkit-mask-repeat: no-repeat;
+            mask-repeat: no-repeat; 
+        } */
+    </style>
+</head>
+
+<body>
+    <p>
+        CSS Image Reflections <br>
+        The box-reflect property is used to create an image reflection. <br>
+
+        The value of the 'box-reflect' property can be :- below, above, left , or right.
+    </p> <br>
+
+    <img class="image-1" src="../cssImage/bird.jpg" alt="img bird">
+    <hr>
+    <div>
+        <h1>CSS object-fit property</h1>
+
+        <p>
+            This property is used to specify how an &lt;img&gt; or &lt;video&gt; should be resized to fit its
+            container.<br><br>
+
+            'object-fit' property can take one of the following values: (fill, contain, cover, none, scale-down); <br>
+            <br>
+            img{ <br>
+            object-fit: cover; <br>
+            } <br>
+        </p>
+        <img class="image-2" src="../cssImage/flowerpng-pic.png" alt="img-boj-fit">
+        <img class="image-3" src="../cssImage/flowerpng-pic.png" alt="img-position">
+    </div>
+
+    
+    <!-- /* Now masking not applying */ -->
+
+    <!-- Image masking
+    <div class="mask-1">
+        <img src="../cssImage/bird.jpg" alt="Mask-image"  width="600" height="400">
+    </div> -->
+</body>
+
+</html>
